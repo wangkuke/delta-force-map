@@ -74,6 +74,23 @@
                 <div class="nav-ctn img_nav_bg">
                   <div class="nav-title img_nav_title"></div>
 
+                  <div class="lang-switcher">
+                      <button class="lang-switcher-current">
+                          <span id="current-lang-text">Language</span>
+                          <i class="fas fa-chevron-down"></i>
+                      </button>
+                      <div class="lang-switcher-dropdown">
+                          <a href="#" data-lang="zh-CN">中文</a>
+                          <a href="#" data-lang="en">English</a>
+                          <a href="#" data-lang="fr">Français</a>
+                          <a href="#" data-lang="de">Deutsch</a>
+                          <a href="#" data-lang="hi">हिन्दी</a>
+                          <a href="#" data-lang="es">Español</a>
+                          <a href="#" data-lang="th">ไทย</a>
+                          <a href="#" data-lang="pt-BR">Português (BR)</a>
+                      </div>
+                  </div>
+
                   <!-- 搜索 -->
                   <div class="map-select">
                     <input type="text" class="select-iput" data-i18n-placeholder="map_tool.search_placeholder" placeholder="搜索">
@@ -183,22 +200,6 @@
                   <div class="right-nav-bg img_right_nav_bg"></div>
                   <div class="btn-share"></div>
                   <div class="btn-tutorial"></div>
-                  <div class="lang-switcher">
-                      <button class="lang-switcher-current">
-                          <span id="current-lang-text">Language</span>
-                          <i class="fas fa-chevron-up"></i>
-                      </button>
-                      <div class="lang-switcher-dropdown">
-                          <a href="#" onclick="changeLanguage('zh-CN')">中文</a>
-                          <a href="#" onclick="changeLanguage('en')">English</a>
-                          <a href="#" onclick="changeLanguage('fr')">Français</a>
-                          <a href="#" onclick="changeLanguage('de')">Deutsch</a>
-                          <a href="#" onclick="changeLanguage('hi')">हिन्दी</a>
-                          <a href="#" onclick="changeLanguage('es')">Español</a>
-                          <a href="#" onclick="changeLanguage('th')">ไทย</a>
-                          <a href="#" onclick="changeLanguage('pt-BR')">Português (BR)</a>
-                      </div>
-                  </div>
                 </div>
 
                 <!-- 楼层导航 -->
@@ -345,8 +346,9 @@
             localStorage.setItem('lang', lang);
             updateContent();
             updateLangSwitcherUI();
-            if (document.querySelector('.lang-switcher')) {
-                document.querySelector('.lang-switcher').classList.remove('show');
+            const switcher = document.querySelector('.lang-switcher');
+            if (switcher) {
+                switcher.classList.remove('show');
             }
         });
     }
@@ -363,7 +365,7 @@
         }
 
         document.querySelectorAll('.lang-switcher-dropdown a').forEach(a => {
-            const lang = a.getAttribute('onclick').match(/'(.*?)'/)[1];
+            const lang = a.getAttribute('data-lang');
             if (lang === currentLang) {
                 a.classList.add('active');
             } else {
@@ -385,8 +387,10 @@
          });
 
          document.querySelectorAll('.lang-switcher-dropdown a').forEach(a => {
-            const lang = a.getAttribute('onclick').match(/'(.*?)'/)[1];
-            a.onclick = (event) => changeLanguage(lang, event);
+            const lang = a.getAttribute('data-lang');
+            a.addEventListener('click', (event) => {
+                changeLanguage(lang, event);
+            });
          });
 
          window.addEventListener('click', (event) => {
