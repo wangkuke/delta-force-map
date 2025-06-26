@@ -1045,30 +1045,21 @@
                 },
             }, (err, t) => {
                 if (err) return console.error(err);
-                // After init, run everything that needs translation
-                document.addEventListener('DOMContentLoaded', () => {
-                    setupLanguageSwitcher();
 
-                    i18next.on('initialized', () => {
-                        updateContent();
-                        updatePasswords();
-                        updateLangSwitcherUI();
-                    });
-                    
-                    if (i18next.isInitialized) {
-                         updateContent();
-                         updatePasswords();
-                         updateLangSwitcherUI();
-                    }
-                    
-                    // Add interaction for other cards
-                    document.querySelectorAll('.feature-card, .wiki-category').forEach(card => {
-                        card.addEventListener('click', function() {
-                            this.style.backgroundColor = 'rgba(52, 152, 219, 0.3)';
-                            setTimeout(() => {
-                                this.style.backgroundColor = '';
-                            }, 300);
-                        });
+                // The DOM is ready since the script is at the end of the body, and i18next is initialized.
+                // We can now safely set up event listeners and update the UI.
+                setupLanguageSwitcher();
+                updateContent();
+                updatePasswords();
+                updateLangSwitcherUI();
+
+                // Add interaction for other cards
+                document.querySelectorAll('.feature-card, .wiki-category').forEach(card => {
+                    card.addEventListener('click', function() {
+                        this.style.backgroundColor = 'rgba(52, 152, 219, 0.3)';
+                        setTimeout(() => {
+                            this.style.backgroundColor = '';
+                        }, 300);
                     });
                 });
             });
