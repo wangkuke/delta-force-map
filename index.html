@@ -398,6 +398,12 @@
             border-radius: 8px;
         }
         
+        .task-item-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        
         .task-icon {
             width: 40px;
             height: 40px;
@@ -869,45 +875,27 @@
                         <h2 class="card-title"><i class="fas fa-tasks"></i> <span data-i18n="tasks.title">任务专栏</span></h2>
                     </div>
                     <div class="task-list">
-                        <div class="task-item">
-                            <div class="task-icon">
-                                <i class="fas fa-bullseye"></i>
+                        <a href="map Tool.html" class="task-item-link">
+                            <div class="task-item">
+                                <div class="task-icon">
+                                    <i class="fas fa-bullseye"></i>
+                                </div>
+                                <div class="task-info">
+                                    <h3 data-i18n="tasks.task1_title">互动地图</h3>
+                                    <p data-i18n="tasks.task1_desc">查看地图互动</p>
+                                </div>
+                                <div class="task-reward">★★★★★</div>
                             </div>
-                            <div class="task-info">
-                                <h3 data-i18n="tasks.task1_title">特勤处制造</h3>
-                                <p data-i18n="tasks.task1_desc">完成5次武器制造任务</p>
-                            </div>
-                            <div class="task-reward">+850 XP</div>
-                        </div>
-                        <div class="task-item">
-                            <div class="task-icon">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <div class="task-info">
-                                <h3 data-i18n="tasks.task2_title">交易行涨幅榜</h3>
-                                <p data-i18n="tasks.task2_desc">每小时更新市场趋势</p>
-                            </div>
-                            <div class="task-reward">+600 XP</div>
-                        </div>
-                        <div class="task-item">
-                            <div class="task-icon">
-                                <i class="fas fa-lock-open"></i>
-                            </div>
-                            <div class="task-info">
-                                <h3 data-i18n="tasks.task3_title">忠诚直降</h3>
-                                <p data-i18n="tasks.task3_desc">完成3次忠诚度任务</p>
-                            </div>
-                            <div class="task-reward">+1200 XP</div>
-                        </div>
+                        </a>
                         <div class="task-item">
                             <div class="task-icon">
                                 <i class="fas fa-tools"></i>
                             </div>
                             <div class="task-info">
                                 <h3 data-i18n="tasks.task4_title">改枪方案</h3>
-                                <p data-i18n="tasks.task4_desc">定制并测试5种武器配置</p>
+                                <p data-i18n="tasks.task4_desc">delta force map build for now</p>
                             </div>
-                            <div class="task-reward">+950 XP</div>
+                            <div class="task-reward">★★★★</div>
                         </div>
                     </div>
                 </section>
@@ -1040,6 +1028,7 @@
                 lng: localStorage.getItem('lang') || 'en', // Default language set to English
                 fallbackLng: 'en',
                 debug: true,
+                load: 'currentOnly', // Prevent loading language-only file like 'zh' from 'zh-CN'
                 backend: {
                     loadPath: '/locales/{{lng}}/translation.json',
                 },
