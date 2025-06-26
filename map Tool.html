@@ -309,6 +309,7 @@
             lng: localStorage.getItem('lang') || 'zh-CN', // Default to Chinese as per page content
             fallbackLng: 'zh-CN', // Fallback to Chinese
             debug: true,
+            load: 'currentOnly', // Prevent loading language-only file like 'zh' from 'zh-CN'
             backend: {
                 loadPath: '/locales/{{lng}}/translation.json',
             },
