@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Primary Meta Tags -->
+    <title>三角洲行动地图攻略 (Delta Force Map) - 专业游戏攻略站 | DeltaForceMap.com</title>
+    <meta name="description" content="三角洲行动 (Delta Force) 游戏最全地图攻略、每日地图密码、任务指南和武器百科。访问 deltaforcemap.com 获取最新、最专业的三角洲行动游戏攻略，成为战场精英。">
+    <meta name="keywords" content="delta force, delta force map, 三角洲行动, 三角洲行动地图, 地图攻略, 游戏攻略, 每日密码">
+    <link rel="canonical" href="https://www.deltaforcemap.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.deltaforcemap.com/">
+    <meta property="og:title" content="三角洲行动地图攻略 (Delta Force Map) | DeltaForceMap.com">
+    <meta property="og:description" content="三角洲行动 (Delta Force) 游戏最全地图攻略、每日地图密码、任务指南和武器百科。">
+    <meta property="og:site_name" content="三角洲行动攻略站">
+    <!-- <meta property="og:image" content="https://www.deltaforcemap.com/your-preview-image.jpg"> -->
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.deltaforcemap.com/">
+    <meta property="twitter:title" content="三角洲行动地图攻略 (Delta Force Map) | DeltaForceMap.com">
+    <meta property="twitter:description" content="三角洲行动 (Delta Force) 游戏最全地图攻略、每日地图密码、任务指南和武器百科。">
+    <!-- <meta property="twitter:image" content="https://www.deltaforcemap.com/your-preview-image.jpg"> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7W7Y3M29NV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7W7Y3M29NV');
+    </script>
+    <style>
+        :root {
+            --primary: #1a2a4a;
+            --secondary: #2c3e50;
+            --accent: #e74c3c;
+            --accent-light: #ff6b6b;
+            --light: #ecf0f1;
+            --dark: #121a26;
+            --success: #2ecc71;
+            --warning: #f39c12;
+            --info: #3498db;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, var(--dark), var(--primary));
+            color: var(--light);
+            line-height: 1.6;
+            min-height: 100vh;
+            background-attachment: fixed;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: rgba(10, 20, 35, 0.85);
+            backdrop-filter: blur(10px);
+            padding: 15px 0;
+            border-bottom: 2px solid var(--accent);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo i {
+            color: var(--accent);
+            font-size: 2.5rem;
+        }
+        
+        .logo h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.2rem;
+            background: linear-gradient(to right, var(--accent-light), var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .logo span {
+            color: var(--light);
+            font-weight: 300;
+            font-size: 1.1rem;
+            margin-left: 5px;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        
+        nav a {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        nav a:hover {
+            color: var(--accent-light);
+        }
+        
+        nav a.active {
+            background: rgba(231, 76, 60, 0.2);
+            color: var(--accent-light);
+        }
+        
+        nav a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--accent);
+            border-radius: 3px;
+        }
+        
+        /* Main Content Layout */
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+        
+        /* Card Styles */
+        .card {
+            background: rgba(25, 40, 65, 0.7);
+            border-radius: 12px;
+            padding: 25px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid rgba(231, 76, 60, 0.3);
+        }
+        
+        .card-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.6rem;
+            color: var(--accent-light);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .card-title i {
+            color: var(--accent);
+        }
+        
+        .update-time {
+            font-size: 0.9rem;
+            color: #95a5a6;
+        }
+        
+        /* Map Passwords Section */
+        .map-passwords {
+            grid-column: span 2;
+        }
+        
+        .password-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .password-card-link {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .password-card {
+            background: rgba(30, 50, 80, 0.6);
+            border-radius: 10px;
+            padding: 18px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .password-card:hover {
+            background: rgba(40, 65, 100, 0.7);
+            border-color: rgba(231, 76, 60, 0.4);
+        }
+        
+        .map-name {
+            font-weight: 500;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #f1c40f;
+        }
+        
+        .password-value {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.8rem;
+            letter-spacing: 3px;
+            color: var(--success);
+            text-align: center;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 10px;
+            border-radius: 6px;
+            margin-top: 5px;
+        }
+        
+        /* Hot Features Section */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .feature-card {
+            background: rgba(30, 50, 80, 0.6);
+            border-radius: 10px;
+            padding: 20px 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .feature-card:hover {
+            background: rgba(40, 65, 100, 0.7);
+            transform: translateY(-3px);
+            border-color: var(--info);
+        }
+        
+        .feature-icon {
+            font-size: 2.2rem;
+            color: var(--info);
+            margin-bottom: 12px;
+        }
+        
+        .feature-name {
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+        
+        /* Task Section */
+        .task-list {
+            margin-top: 15px;
+        }
+        
+        .task-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            transition: background 0.3s ease;
+        }
+        
+        .task-item:last-child {
+            border-bottom: none;
+        }
+        
+        .task-item:hover {
+            background: rgba(40, 65, 100, 0.4);
+            border-radius: 8px;
+        }
+        
+        .task-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(52, 152, 219, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .task-icon i {
+            color: var(--info);
+            font-size: 1.2rem;
+        }
+        
+        .task-info h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 5px;
+            color: #f1c40f;
+        }
+        
+        .task-info p {
+            font-size: 0.9rem;
+            color: #bdc3c7;
+        }
+        
+        .task-reward {
+            margin-left: auto;
+            background: rgba(46, 204, 113, 0.2);
+            color: var(--success);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        /* Wiki Section */
+        .wiki-categories {
+            margin-top: 15px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+        }
+        
+        .wiki-category {
+            background: rgba(30, 50, 80, 0.6);
+            border-radius: 10px;
+            padding: 20px 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .wiki-category:hover {
+            background: rgba(40, 65, 100, 0.7);
+            transform: translateY(-3px);
+            border-color: var(--warning);
+        }
+        
+        .wiki-icon {
+            font-size: 2rem;
+            color: var(--warning);
+            margin-bottom: 12px;
+        }
+        
+        .category-name {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        
+        /* Sidebar Styles */
+        .sidebar .card {
+            margin-bottom: 25px;
+        }
+        
+        .sidebar-card-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        
+        .sidebar-card-link .card {
+            /* The card itself already has transitions, so we just define the hover state */
+        }
+        
+        .sidebar-card-link:hover .card {
+            border-color: var(--accent);
+        }
+        
+        .sidebar-card-prompt {
+            margin-top: 12px;
+            text-align: right;
+            color: #bdc3c7;
+            font-size: 1rem;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .sidebar-card-prompt i {
+            transition: transform 0.3s ease;
+        }
+        
+        .sidebar-card-link:hover .sidebar-card-prompt i {
+            transform: translateX(5px);
+        }
+        
+        .sidebar-subtitle {
+            font-size: 0.95rem;
+            color: #bdc3c7;
+            font-weight: 400;
+            margin-top: -12px;
+        }
+        
+        .sidebar-title {
+            font-size: 1.4rem;
+            margin-bottom: 18px;
+            color: var(--accent-light);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .trending-list {
+            list-style: none;
+        }
+        
+        .trending-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .trending-item:last-child {
+            border-bottom: none;
+        }
+        
+        .trending-rank {
+            width: 28px;
+            height: 28px;
+            background: rgba(231, 76, 60, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            flex-shrink: 0;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        
+        .trending-name {
+            font-weight: 500;
+            flex-grow: 1;
+        }
+        
+        .trending-value {
+            font-weight: bold;
+            color: var(--success);
+        }
+        
+        .trending-value.negative {
+            color: var(--accent);
+        }
+        
+        .discord-card {
+            background: linear-gradient(135deg, #5865F2, #404EED);
+            text-align: center;
+            padding: 25px 20px;
+        }
+        
+        .discord-icon {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            color: white;
+        }
+        
+        .discord-title {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+            color: white;
+        }
+        
+        .discord-btn {
+            display: inline-block;
+            background: white;
+            color: #5865F2;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .discord-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Footer Styles */
+        footer {
+            background: rgba(10, 20, 35, 0.85);
+            margin-top: 50px;
+            padding: 30px 0;
+            border-top: 2px solid var(--accent);
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .footer-logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.8rem;
+            color: var(--accent-light);
+            margin-bottom: 15px;
+        }
+        
+        .footer-about p {
+            color: #bdc3c7;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+        
+        .footer-links h3 {
+            color: var(--light);
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a {
+            color: #bdc3c7;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent-light);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 30px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .sidebar {
+                margin-top: 30px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .map-passwords {
+                grid-column: span 1;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .password-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .sidebar-card--compact {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .sidebar-card--compact .sidebar-title {
+            margin-bottom: 5px;
+        }
+        .sidebar-card--compact .sidebar-subtitle {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .sidebar-card--compact .card-arrow-icon {
+            font-size: 1.5rem;
+            color: var(--light);
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        .sidebar-card-link:hover .sidebar-card--compact .card-arrow-icon {
+            transform: translateX(5px);
+            color: var(--accent);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-crosshairs"></i>
+                <h1>三角洲行动<span>攻略站</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">首页</a></li>
+                    <li><a href="#">地图攻略</a></li>
+                    <li><a href="#">武器库</a></li>
+                    <li><a href="#">任务系统</a></li>
+                    <li><a href="#">玩家社区</a></li>
+                    <li><a href="#">更新日志</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="main-grid">
+            <div class="main-content">
+                <!-- Daily Map Passwords -->
+                <section class="card map-passwords">
+                    <div class="card-header">
+                        <h2 class="card-title"><i class="fas fa-map-marked-alt"></i> 每日地图密码</h2>
+                        <div class="update-time">更新于6月26日</div>
+                    </div>
+                    <div class="password-grid">
+                        <a href="ZeroDam.html" class="password-card-link">
+                            <div class="password-card">
+                                <div class="map-name">零号大坝</div>
+                                <div class="password-value">8649</div>
+                            </div>
+                        </a>
+                        <a href="Layali Grove.html" class="password-card-link">
+                            <div class="password-card">
+                                <div class="map-name">长弓溪谷</div>
+                                <div class="password-value">0289</div>
+                            </div>
+                        </a>
+                        <a href="Brakkesh.html" class="password-card-link">
+                            <div class="password-card">
+                                <div class="map-name">巴克什</div>
+                                <div class="password-value">7335</div>
+                            </div>
+                        </a>
+                        <a href="Space City.html" class="password-card-link">
+                            <div class="password-card">
+                                <div class="map-name">航天基地</div>
+                                <div class="password-value">2312</div>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- Hot Features -->
+                <section class="card">
+                    <div class="card-header">
+                        <h2 class="card-title"><i class="fas fa-fire"></i> 热门功能</h2>
+                    </div>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-calculator"></i></div>
+                            <div class="feature-name">模拟器</div>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-shopping-cart"></i></div>
+                            <div class="feature-name">买入推荐</div>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-cloud"></i></div>
+                            <div class="feature-name">云端处</div>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                            <div class="feature-name">战备</div>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-mouse"></i></div>
+                            <div class="feature-name">鼠标开箱</div>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-key"></i></div>
+                            <div class="feature-name">底价钥匙子弹</div>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-exchange-alt"></i></div>
+                            <div class="feature-name">子弹兑换收益</div>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-star"></i></div>
+                            <div class="feature-name">战备推荐</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Task Column -->
+                <section class="card">
+                    <div class="card-header">
+                        <h2 class="card-title"><i class="fas fa-tasks"></i> 任务专栏</h2>
+                    </div>
+                    <div class="task-list">
+                        <div class="task-item">
+                            <div class="task-icon">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <div class="task-info">
+                                <h3>特勤处制造</h3>
+                                <p>完成5次武器制造任务</p>
+                            </div>
+                            <div class="task-reward">+850 XP</div>
+                        </div>
+                        <div class="task-item">
+                            <div class="task-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="task-info">
+                                <h3>交易行涨幅榜</h3>
+                                <p>每小时更新市场趋势</p>
+                            </div>
+                            <div class="task-reward">+600 XP</div>
+                        </div>
+                        <div class="task-item">
+                            <div class="task-icon">
+                                <i class="fas fa-lock-open"></i>
+                            </div>
+                            <div class="task-info">
+                                <h3>忠诚直降</h3>
+                                <p>完成3次忠诚度任务</p>
+                            </div>
+                            <div class="task-reward">+1200 XP</div>
+                        </div>
+                        <div class="task-item">
+                            <div class="task-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <div class="task-info">
+                                <h3>改枪方案</h3>
+                                <p>定制并测试5种武器配置</p>
+                            </div>
+                            <div class="task-reward">+950 XP</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Wiki & Guides -->
+                <section class="card">
+                    <div class="card-header">
+                        <h2 class="card-title"><i class="fas fa-book"></i> 百科攻略</h2>
+                    </div>
+                    <div class="wiki-categories">
+                        <div class="wiki-category">
+                            <div class="wiki-icon"><i class="fas fa-map"></i></div>
+                            <div class="category-name">地图解析</div>
+                        </div>
+                        <div class="wiki-category">
+                            <div class="wiki-icon"><i class="fas fa-gun"></i></div>
+                            <div class="category-name">武器指南</div>
+                        </div>
+                        <div class="wiki-category">
+                            <div class="wiki-icon"><i class="fas fa-user-secret"></i></div>
+                            <div class="category-name">角色技能</div>
+                        </div>
+                        <div class="wiki-category">
+                            <div class="wiki-icon"><i class="fas fa-trophy"></i></div>
+                            <div class="category-name">成就攻略</div>
+                        </div>
+                        <div class="wiki-category">
+                            <div class="wiki-icon"><i class="fas fa-robot"></i></div>
+                            <div class="category-name">敌人图鉴</div>
+                        </div>
+                        <div class="wiki-category">
+                            <div class="wiki-icon"><i class="fas fa-cogs"></i></div>
+                            <div class="category-name">游戏机制</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <a href="#" class="sidebar-card-link">
+                    <div class="card sidebar-card--compact">
+                        <div>
+                    <h2 class="sidebar-title"><i class="fas fa-chart-line"></i> 交易行涨幅榜</h2>
+                            <p class="sidebar-subtitle">每小时更新趋势</p>
+                </div>
+                        <i class="fas fa-arrow-right card-arrow-icon"></i>
+                    </div>
+                </a>
+
+                <a href="#" class="sidebar-card-link">
+                    <div class="card sidebar-card--compact">
+                        <div>
+                            <h2 class="sidebar-title"><i class="fas fa-tools"></i> 特勤处制造</h2>
+                            <p class="sidebar-subtitle">最高收益推荐</p>
+                        </div>
+                        <i class="fas fa-arrow-right card-arrow-icon"></i>
+                    </div>
+                </a>
+
+                <div class="card discord-card">
+                    <i class="fab fa-discord discord-icon"></i>
+                    <h2 class="discord-title">加入玩家社区</h2>
+                    <p>与10,000+玩家交流战术、组队完成任务</p>
+                    <a href="https://discord.gg/FGgWa8FBEK" target="_blank" rel="noopener noreferrer" class="discord-btn">加入Discord</a>
+                </div>
+
+                <div class="card">
+                    <h2 class="sidebar-title"><i class="fas fa-bullhorn"></i> 最新活动</h2>
+                    <ul class="trending-list">
+                        <li class="trending-item">
+                            <div class="trending-icon"><i class="fas fa-gift"></i></div>
+                            <div class="trending-name">登录奖励双倍</div>
+                        </li>
+                        <li class="trending-item">
+                            <div class="trending-icon"><i class="fas fa-trophy"></i></div>
+                            <div class="trending-name">周末挑战赛</div>
+                        </li>
+                        <li class="trending-item">
+                            <div class="trending-icon"><i class="fas fa-user-plus"></i></div>
+                            <div class="trending-name">邀请好友活动</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <div class="footer-logo">三角洲行动攻略站</div>
+                <p>提供最新、最专业的三角洲行动游戏攻略、地图解析、武器评测和任务指南。助力玩家提升游戏体验，成为战场精英。</p>
+                <p>本站为非官方攻略站，与游戏开发商无关联。</p>
+            </div>
+            <div class="footer-links">
+                <h3>快速链接</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> 首页</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> 地图攻略</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> 武器数据库</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> 任务指南</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> 游戏更新</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>资源中心</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> 下载中心</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> 视频攻略</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> 玩家论坛</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> 常见问题</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> 联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2023 三角洲行动攻略站 | 本网站仅用于游戏攻略交流，所有游戏内容版权归其开发商所有
+        </div>
+    </footer>
+
+    <script>
+        // Function to fetch passwords and populate the grid
+        function updatePasswords() {
+            fetch('passwords.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok, using fallback content.');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    const latestData = data[0]; // Assuming the first entry is the latest
+                    const passwordGrid = document.querySelector('.password-grid');
+                    const updateTimeEl = document.querySelector('.update-time');
+
+                    if (!latestData || !passwordGrid || !updateTimeEl) {
+                        console.error('Could not find necessary elements to update passwords.');
+                        return;
+                    }
+
+                    // Clear any existing content
+                    passwordGrid.innerHTML = ''; 
+                    
+                    // Update the time display
+                    updateTimeEl.textContent = `更新于${latestData.date}`;
+
+                    // Populate new password cards
+                    latestData.passwords.forEach(p => {
+                        const card = document.createElement('div');
+                        card.className = 'password-card';
+                        card.innerHTML = `
+                            <div class="map-name">${p.map}</div>
+                            <div class="password-value">${p.code}</div>
+                        `;
+                        
+                        if (p.map === '零号大坝') {
+                            const link = document.createElement('a');
+                            link.href = 'ZeroDam.html';
+                            link.className = 'password-card-link';
+                            link.appendChild(card);
+                            passwordGrid.appendChild(link);
+                        } else if (p.map === '长弓溪谷') {
+                            const link = document.createElement('a');
+                            link.href = 'Layali Grove.html';
+                            link.className = 'password-card-link';
+                            link.appendChild(card);
+                            passwordGrid.appendChild(link);
+                        } else {
+                            passwordGrid.appendChild(card);
+                        }
+                    });
+                })
+                .catch(error => {
+                    console.error(error);
+                    // Do nothing to the DOM, the hardcoded version will be kept.
+                });
+        }
+
+        // Run scripts after the DOM is fully loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            // Try to load dynamic passwords and update the section
+            updatePasswords();
+            
+            // Add interaction for other cards
+        document.querySelectorAll('.feature-card, .wiki-category').forEach(card => {
+            card.addEventListener('click', function() {
+                this.style.backgroundColor = 'rgba(52, 152, 219, 0.3)';
+                setTimeout(() => {
+                    this.style.backgroundColor = '';
+                }, 300);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

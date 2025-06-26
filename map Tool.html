@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <!-- SEO Meta Tags -->
+    <title>三角洲行动交互式地图工具 (Delta Force Map) | deltaforcemap.com</title>
+    <meta name="description" content="最详尽的《三角洲行动》(Delta Force) 交互式地图工具。快速查找所有物资点位、出生点、撤离点和任务目标。您的战场必备工具 - deltaforcemap.com。">
+    <meta name="keywords" content="delta force map, delta force, 三角洲行动, 交互地图, 地图工具, 物资点, 撤离点, 任务攻略, deltaforcemap.com, 零号大坝, 长弓溪谷, 航天基地, 巴克什">
+    <link rel="canonical" href="https://www.deltaforcemap.com/map-tool.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.deltaforcemap.com/map-tool.html">
+    <meta property="og:title" content="三角洲行动交互式地图工具 (Delta Force Map) | deltaforcemap.com">
+    <meta property="og:description" content="最详尽的《三角洲行动》(Delta Force) 交互式地图工具。快速查找所有物资点位、出生点、撤离点和任务目标。">
+    <meta property="og:site_name" content="三角洲行动攻略站">
+    <!-- <meta property="og:image" content="https://www.deltaforcemap.com/map-tool-preview.jpg"> -->
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.deltaforcemap.com/map-tool.html">
+    <meta property="twitter:title" content="三角洲行动交互式地图工具 (Delta Force Map) | deltaforcemap.com">
+    <meta property="twitter:description" content="最详尽的《三角洲行动》(Delta Force) 交互式地图工具。快速查找所有物资点位、出生点、撤离点和任务目标。">
+    <!-- <meta property="twitter:image" content="https://www.deltaforcemap.com/map-tool-preview.jpg"> -->
+
+    <!-- Original Meta Tags -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="robots" content="all">
+    <meta id="share-description" itemprop="description" name="description" content="欢迎使用《三角洲行动》地图工具，您可使用本地图快速查询烽火地带模式中各地图的物资点位，帮助您在险象环生的战场中成功撤离。">
+    <meta id="share-name" itemprop="name" content="">
+    <meta id="share-image" itemprop="image" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta itemprop="image" content="https://game.gtimg.cn/images/dfm/cp/a20240729directory/logo.jpg">
+    <link rel="icon" href="https://game.gtimg.cn/images/dfm/favicon.ico">
+    <link rel="stylesheet" href="https://game.gtimg.cn/images/dfm/cp/a20240729directory/leaflet.css" crossorigin="">
+    <link rel="stylesheet" href="//game.gtimg.cn/images/dfm/cp/a20240729directory/css/L.Control.Zoomslider.css" crossorigin="">
+    <!-- <script src="//game.gtimg.cn/images/dfm/cp/a20240729directory/js/lib/leaflet-src.js"></script> -->
+    <script src="//game.gtimg.cn/images/dfm/cp/a20240729directory/js/lib/leaflet.js"></script>
+    <script src="//game.gtimg.cn/images/dfm/cp/a20240729directory/js/lib/L.Control.Zoomslider.js"></script>
+    <!-- <script src="//game.gtimg.cn/images/dfm/cp/a20240729directory/js/lib/rbush.js"></script> -->
+    <!-- <script src="//game.gtimg.cn/images/dfm/cp/a20240729directory/js/lib/leaflet-markers-canvas.js"></script> -->
+
+  <script type="text/javascript">"use strict";!function(d,e){var n="orientationchange"in window?"orientationchange":"resize",t=function e(){var n,t=d.documentElement,i=t.clientWidth;if(i)return n=1720<i?100*i/1920:172e3/1920,t.style.fontSize=n+"px",e}();t(),setTimeout(function(){t()},300),e.addEventListener("load",t,!1),e.addEventListener(n,t,!1),d.addEventListener&&d.addEventListener("DOMContentLoaded",t,!1)}(document,window)</script>
+  <script type="text/javascript">!function(){if(-1!=(e=navigator.userAgent).indexOf("iPhone")||-1!=e.indexOf("iPad")||-1!=e.indexOf("iPod")||-1!=e.indexOf("Android")){if(-1<(e=document.referrer).indexOf("baidu.com")||-1<e.indexOf("sogou.com")||-1<e.indexOf("haosou.com")||-1<e.indexOf("hao76.com"))if(e=void 0,window.sessionStorage)sessionStorage.setItem("channel","seo");else{var e,o="";0!=(e=e||0)&&((o=new Date).setTime(o.getTime()+1e3*e),o="; expires="+o.toGMTString()),document.cookie="channel="+escape("seo")+o+"; path=/"}self.location="/cp/a20240729directory/m/index.html"+location.search}}()</script>
+  
+    
+      
+      <link href="//game.gtimg.cn/images/dfm/cp/a20240729directory/main.css" rel="stylesheet">
+    
+  
+
+  <!-- 页面设计：cp | 页面制作：cp | 创建：2023-07-13 -->
+</head>
+
+<body>
+    <div class="content">
+          <!-- full -->
+        <div class="m-main-wrap full">
+          <!-- 竖屏页 -->
+          <!-- absf -->
+          <div class="m-vertical absf">
+              <!-- abcter -->
+            <div class="m-wrap sizcover absf">
+              <div class="m-index absf">
+                <div id="MapContainer" class="map">
+                  <div class="map-mask img_map_mask absf sizcover"></div>
+                </div>
+            
+                <div class="nav-ctn img_nav_bg">
+                  <div class="nav-title img_nav_title"></div>
+
+                  <!-- 搜索 -->
+                  <div class="map-select">
+                    <input type="text" class="select-iput" placeholder="搜索">
+                    <div class="select-ctn">
+
+                    </div>
+                    <div class="btn-close-select">X</div>
+                  </div>
+                  <!-- 分层 -->
+                  <div class="map-floor">
+                    <div class="btn-floor btn_floor"><p>查看地图分层</p></div>
+                    <div class="floor-list">
+                      <div class="floor-item not-event act">大地图模式</div>
+                    </div>
+                  </div>
+                  <!-- 快速定位 -->
+                  <div class="select-region-ctn">
+                    <div class="btn-select-region btn_select"><p class="curr-reigon">地图快速定位</p></div>
+                    <div class="region-list"></div>
+                  </div>
+
+                  <!-- 切换地图 -->
+                  <div class="curr-map-ctn">
+                    <div class="curr-map-name">零号大坝 <span class="map-lv"> ( 普通 )</span></div>
+                    <div class="btn-change-map-ctn">
+                      <div class="btn-change-map img_change_map"></div>
+                      <!-- 烽火地带 -->
+                      <div class="map-list-ctn">
+                        <div class="map-list">
+                          <div class="map-item map-item-0 act" data-index="0">零号大坝</div>
+                          <div class="map-item map-item-1" data-index="1">长弓溪谷</div>
+                          <div class="map-item map-item-2" data-index="2">航天基地</div>
+                          <div class="map-item map-item-3" data-index="3">巴克什</div>
+                        </div>
+                        <div class="map-lv-list">
+                          <div class="map-lv-item map-lv-item-0 act" data-lv="0">普通</div>
+                          <div class="map-lv-item map-lv-item-1" data-lv="1">机密</div>
+                          <div class="map-lv-item map-lv-item-2" data-lv="2">绝密</div>
+                          <div class="map-lv-item map-lv-item-3" data-lv="0">前夜</div>
+                          <div class="map-lv-item map-lv-item-4" data-lv="1">长夜</div>
+                          <div class="map-lv-item map-lv-item-5" data-lv="2">终夜</div>
+                        </div>
+
+                        <div class="war-list">
+                          <div class="map-item map-item-0" data-index="0" data-map="pc">攀升</div>
+                          <div class="map-item map-item-1" data-index="1" data-map="ljd">临界点</div>
+                          <div class="map-item map-item-2" data-index="2" data-map="gc">贯穿</div>
+                          <div class="map-item map-item-3" data-index="3" data-map="jq">烬区</div>
+                          <div class="map-item map-item-4" data-index="4" data-map="qhz">堑壕战</div>
+                          <div class="map-item map-item-4" data-index="5" data-map="df">刀锋</div>
+                          <div class="map-item map-item-4" data-index="6" data-map="dg">断轨</div>
+                        </div>
+                        <div class="war-lv-list">
+                          <div class="map-lv-item map-lv-item-0" data-lv="0" data-type="pc">PC</div>
+                          <div class="map-lv-item map-lv-item-1" data-lv="1" data-type="mobile">移动</div>
+                          <div class="btn-type-change close">
+                            <div class="type-option-item" data-type="normal">攻防模式</div>
+                            <div class="type-option-item" data-type="occupy">占领模式</div>
+                          </div>
+                        </div>
+
+                      </div>
+                     
+                    </div>
+                  </div>
+
+                  <div class="btn-war-change fh">
+                    <div class="map-change-text fhdd img_map_type_fhdd_act"></div>
+                    <div class="war-change-text qmzc img_map_type_qmzc"></div>
+                  </div>
+                  <!-- 进攻\防守 -->
+                  <div class="btn-view-change">
+                    <div class="view-change1 act">
+                      <div class="choose-i act"></div>
+                      <div class="view-change1-text">攻方视角</div>
+                    </div>
+                    <div class="view-change2">
+                      <div class="choose-i"></div>
+                      <div class="view-change2-text">守方视角</div>
+                    </div>
+                  </div>
+
+                  <div class="img_random_bg show random-ctn">
+                    <p>开启地图随机事件 ｜ <span class="random-name">暂无</span></p>
+                    <div class="btn-random close hide"></div>
+                  </div>
+                
+
+                   <div class="choose-all">
+                    <div class="btn-choose-all-icon img_all_close"></div>
+                    全选
+                   </div>
+                  <!-- 选项标签 -->
+                  <div class="nav-option-ctn">
+                    <div class="nav-options"></div>
+                    <div class="nav-type-list"></div>
+                    <div class="reset-choose img_reset"></div>
+                  </div>
+                
+                  <div class="btn-nav-state">
+                    <div class="nav-state-icon img_nav_nav_state"></div>
+                  </div>
+           
+                </div>
+
+                <div class="right-nav">
+                  <div class="right-nav-bg img_right_nav_bg"></div>
+                  <div class="btn-share"></div>
+                  <div class="btn-tutorial"></div>
+                </div>
+
+                <!-- 楼层导航 -->
+                <div class="map-floor-change-ctn">
+                  <div class="map-floor-change-top">
+                    <!-- <div class="floor-left-i"></div> -->
+                    <div class="map-floor-change-list">
+                      <div class="map-floor-item act" data-index="0">1</div>
+                      <div class="map-floor-item" data-index="1">2</div>
+                      <div class="map-floor-item" data-index="2">3</div>
+                      <div class="map-floor-item" data-index="3">4</div>
+                    </div>
+                    <!-- <div class="floor-right-i"></div> -->
+                  </div>
+
+                  <div class="floor-change-ctn">
+                    <div class="floor-change-prev"></div>
+                    <div class="floor-change-tips">点击切换楼层</div>
+                    <div class="floor-change-next"></div>
+                  </div>
+                  <div class="floor-tips">您正在用分层模式查看<span class="span1">行政辖区</span></div>
+                 </div>
+
+                 <div class="deploy-swiper">
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                    </div>
+                    <div class="btn-swiper-prev"></div>
+                    <div class="btn-swiper-next"></div>
+                   </div>
+                 </div>
+
+                <!-- 导航 -->
+                 <div class="war-lv-change-ctn">
+                  <div class="war-lv-change-top">
+                    <div class="lv-left-i"></div>
+                    <div class="war-lv-change-list">
+                      <div class="war-lv-item" data-index="0">1</div>
+                      <div class="war-lv-item" data-index="1">2</div>
+                      <div class="war-lv-item" data-index="2">3</div>
+                      <div class="war-lv-item" data-index="3">4</div>
+                    </div>
+                    <div class="lv-right-i"></div>
+                  </div>
+
+                  <div class="lv-change-ctn">
+                    <div class="lv-change-prev"></div>
+                    <div class="lv-change-tips">区域A</div>
+                    <div class="lv-change-next"></div>
+                  </div>
+                 </div>
+
+                 <div class="deploy-swiper">
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                    </div>
+                    <div class="btn-swiper-prev"></div>
+                    <div class="btn-swiper-next"></div>
+                   </div>
+                 </div>
+                
+
+                <!-- 弹窗 -->
+                  <div class="abcter m-toast">功能开发中，敬请期待</div>
+                  <div class="abcter toast-copy">成功复制到剪切板</div>
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+  <script>window.isSupportWebp=!1,function(){var o=new Image;function A(A){window.isSupportWebp=!(!A||"load"!==A.type)&&1==o.width}o.onerror=A,o.onload=A,o.src="data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA="}()</script>
+
+  <script src="//game.gtimg.cn/images/dfm/cp/a20240729directory/js/lib/jquery-1.11.3.min.js"></script>
+
+  <script src="//game.gtimg.cn/images/dfm/cp/a20240729directory/js/lib/daba_floor.js"></script>
+  <script src="//game.gtimg.cn/images/dfm/cp/a20240729directory/js/lib/cgxg_floor.js"></script>
+  <script src="//game.gtimg.cn/images/dfm/cp/a20240729directory/js/lib/bks_floor.js"></script>
+  <script src="//game.gtimg.cn/images/dfm/cp/a20240729directory/js/lib/map_article.js"></script>
+  <script src="//game.gtimg.cn/images/dfm/cp/a20240729directory/js/lib/map_cgxg.js"></script>
+  <script src="//game.gtimg.cn/images/dfm/cp/a20240729directory/js/lib/map_htjd.js"></script>
+  <script src="//game.gtimg.cn/images/dfm/cp/a20240729directory/js/lib/map_bks.js"></script>
+  <script src="//game.gtimg.cn/images/dfm/cp/a20240729directory/js/lib/map_gc.js"></script>
+  <script src="//game.gtimg.cn/images/dfm/cp/a20240729directory/js/lib/map_jq.js"></script>
+  <script src="//game.gtimg.cn/images/dfm/cp/a20240729directory/js/lib/map_pc.js"></script>
+  <script src="//game.gtimg.cn/images/dfm/cp/a20240729directory/js/lib/map_ljd.js"></script>
+  <script src="//game.gtimg.cn/images/dfm/cp/a20240729directory/js/lib/map_qhz.js"></script>
+  <script src="//game.gtimg.cn/images/dfm/cp/a20240729directory/js/lib/map_df.js"></script>
+  <script src="//game.gtimg.cn/images/dfm/cp/a20240729directory/js/lib/map_dg.js"></script>
+  <script src="//game.gtimg.cn/images/dfm/cp/a20240729directory/js/lib/main.js"></script>
+  
+    
+      
+        <script type="text/javascript" src="//game.gtimg.cn/images/dfm/cp/a20240729directory/main.js"></script>
+    
+  
+</body>
+
+</html>
+    
