@@ -34,11 +34,14 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     
     <link rel="icon" href="https://game.gtimg.cn/images/dfm/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://game.gtimg.cn/images/dfm/cp/a20240729directory/leaflet.css" crossorigin="">
     <link rel="stylesheet" href="//game.gtimg.cn/images/dfm/cp/a20240729directory/css/L.Control.Zoomslider.css" crossorigin="">
     <!-- <script src="//game.gtimg.cn/images/dfm/cp/a20240729directory/js/lib/leaflet-src.js"></script> -->
     <script src="//game.gtimg.cn/images/dfm/cp/a20240729directory/js/lib/leaflet.js"></script>
     <script src="//game.gtimg.cn/images/dfm/cp/a20240729directory/js/lib/L.Control.Zoomslider.js"></script>
+    <script src="https://unpkg.com/i18next/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-http-backend/i18nextHttpBackend.min.js"></script>
     <!-- <script src="//game.gtimg.cn/images/dfm/cp/a20240729directory/js/lib/rbush.js"></script> -->
     <!-- <script src="//game.gtimg.cn/images/dfm/cp/a20240729directory/js/lib/leaflet-markers-canvas.js"></script> -->
 
@@ -73,7 +76,7 @@
 
                   <!-- 搜索 -->
                   <div class="map-select">
-                    <input type="text" class="select-iput" placeholder="搜索">
+                    <input type="text" class="select-iput" data-i18n-placeholder="map_tool.search_placeholder" placeholder="搜索">
                     <div class="select-ctn">
 
                     </div>
@@ -81,14 +84,14 @@
                   </div>
                   <!-- 分层 -->
                   <div class="map-floor">
-                    <div class="btn-floor btn_floor"><p>查看地图分层</p></div>
+                    <div class="btn-floor btn_floor"><p data-i18n="map_tool.view_layers">查看地图分层</p></div>
                     <div class="floor-list">
-                      <div class="floor-item not-event act">大地图模式</div>
+                      <div class="floor-item not-event act" data-i18n="map_tool.large_map_mode">大地图模式</div>
                     </div>
                   </div>
                   <!-- 快速定位 -->
                   <div class="select-region-ctn">
-                    <div class="btn-select-region btn_select"><p class="curr-reigon">地图快速定位</p></div>
+                    <div class="btn-select-region btn_select"><p class="curr-reigon" data-i18n="map_tool.quick_locate">地图快速定位</p></div>
                     <div class="region-list"></div>
                   </div>
 
@@ -100,35 +103,35 @@
                       <!-- 烽火地带 -->
                       <div class="map-list-ctn">
                         <div class="map-list">
-                          <div class="map-item map-item-0 act" data-index="0">零号大坝</div>
-                          <div class="map-item map-item-1" data-index="1">长弓溪谷</div>
-                          <div class="map-item map-item-2" data-index="2">航天基地</div>
-                          <div class="map-item map-item-3" data-index="3">巴克什</div>
+                          <div class="map-item map-item-0 act" data-index="0" data-i18n="maps.zero_dam">零号大坝</div>
+                          <div class="map-item map-item-1" data-index="1" data-i18n="maps.layali_grove">长弓溪谷</div>
+                          <div class="map-item map-item-2" data-index="2" data-i18n="maps.space_city">航天基地</div>
+                          <div class="map-item map-item-3" data-index="3" data-i18n="maps.brakkesh">巴克什</div>
                         </div>
                         <div class="map-lv-list">
-                          <div class="map-lv-item map-lv-item-0 act" data-lv="0">普通</div>
-                          <div class="map-lv-item map-lv-item-1" data-lv="1">机密</div>
-                          <div class="map-lv-item map-lv-item-2" data-lv="2">绝密</div>
-                          <div class="map-lv-item map-lv-item-3" data-lv="0">前夜</div>
-                          <div class="map-lv-item map-lv-item-4" data-lv="1">长夜</div>
-                          <div class="map-lv-item map-lv-item-5" data-lv="2">终夜</div>
+                          <div class="map-lv-item map-lv-item-0 act" data-lv="0" data-i18n="map_tool.map_level.normal">普通</div>
+                          <div class="map-lv-item map-lv-item-1" data-lv="1" data-i18n="map_tool.map_level.confidential">机密</div>
+                          <div class="map-lv-item map-lv-item-2" data-lv="2" data-i18n="map_tool.map_level.top_secret">绝密</div>
+                          <div class="map-lv-item map-lv-item-3" data-lv="0" data-i18n="map_tool.map_level.eve">前夜</div>
+                          <div class="map-lv-item map-lv-item-4" data-lv="1" data-i18n="map_tool.map_level.long_night">长夜</div>
+                          <div class="map-lv-item map-lv-item-5" data-lv="2" data-i18n="map_tool.map_level.final_night">终夜</div>
                         </div>
 
                         <div class="war-list">
-                          <div class="map-item map-item-0" data-index="0" data-map="pc">攀升</div>
-                          <div class="map-item map-item-1" data-index="1" data-map="ljd">临界点</div>
-                          <div class="map-item map-item-2" data-index="2" data-map="gc">贯穿</div>
-                          <div class="map-item map-item-3" data-index="3" data-map="jq">烬区</div>
-                          <div class="map-item map-item-4" data-index="4" data-map="qhz">堑壕战</div>
-                          <div class="map-item map-item-4" data-index="5" data-map="df">刀锋</div>
-                          <div class="map-item map-item-4" data-index="6" data-map="dg">断轨</div>
+                          <div class="map-item map-item-0" data-index="0" data-map="pc" data-i18n="map_tool.war_mode.climb">攀升</div>
+                          <div class="map-item map-item-1" data-index="1" data-map="ljd" data-i18n="map_tool.war_mode.critical_point">临界点</div>
+                          <div class="map-item map-item-2" data-index="2" data-map="gc" data-i18n="map_tool.war_mode.penetrate">贯穿</div>
+                          <div class="map-item map-item-3" data-index="3" data-map="jq" data-i18n="map_tool.war_mode.ash_zone">烬区</div>
+                          <div class="map-item map-item-4" data-index="4" data-map="qhz" data-i18n="map_tool.war_mode.trench_warfare">堑壕战</div>
+                          <div class="map-item map-item-4" data-index="5" data-map="df" data-i18n="map_tool.war_mode.blade">刀锋</div>
+                          <div class="map-item map-item-4" data-index="6" data-map="dg" data-i18n="map_tool.war_mode.derail">断轨</div>
                         </div>
                         <div class="war-lv-list">
                           <div class="map-lv-item map-lv-item-0" data-lv="0" data-type="pc">PC</div>
-                          <div class="map-lv-item map-lv-item-1" data-lv="1" data-type="mobile">移动</div>
+                          <div class="map-lv-item map-lv-item-1" data-lv="1" data-type="mobile" data-i18n="map_tool.device.mobile">移动</div>
                           <div class="btn-type-change close">
-                            <div class="type-option-item" data-type="normal">攻防模式</div>
-                            <div class="type-option-item" data-type="occupy">占领模式</div>
+                            <div class="type-option-item" data-type="normal" data-i18n="map_tool.game_mode.attack_defense">攻防模式</div>
+                            <div class="type-option-item" data-type="occupy" data-i18n="map_tool.game_mode.occupation">占领模式</div>
                           </div>
                         </div>
 
@@ -145,23 +148,23 @@
                   <div class="btn-view-change">
                     <div class="view-change1 act">
                       <div class="choose-i act"></div>
-                      <div class="view-change1-text">攻方视角</div>
+                      <div class="view-change1-text" data-i18n="map_tool.view.attacker">攻方视角</div>
                     </div>
                     <div class="view-change2">
                       <div class="choose-i"></div>
-                      <div class="view-change2-text">守方视角</div>
+                      <div class="view-change2-text" data-i18n="map_tool.view.defender">守方视角</div>
                     </div>
                   </div>
 
                   <div class="img_random_bg show random-ctn">
-                    <p>开启地图随机事件 ｜ <span class="random-name">暂无</span></p>
+                    <p><span data-i18n="map_tool.random_event.text">开启地图随机事件</span> ｜ <span class="random-name" data-i18n="map_tool.random_event.none">暂无</span></p>
                     <div class="btn-random close hide"></div>
                   </div>
                 
 
                    <div class="choose-all">
                     <div class="btn-choose-all-icon img_all_close"></div>
-                    全选
+                    <span data-i18n="map_tool.select_all">全选</span>
                    </div>
                   <!-- 选项标签 -->
                   <div class="nav-option-ctn">
@@ -180,6 +183,22 @@
                   <div class="right-nav-bg img_right_nav_bg"></div>
                   <div class="btn-share"></div>
                   <div class="btn-tutorial"></div>
+                  <div class="lang-switcher">
+                      <button class="lang-switcher-current">
+                          <span id="current-lang-text">Language</span>
+                          <i class="fas fa-chevron-up"></i>
+                      </button>
+                      <div class="lang-switcher-dropdown">
+                          <a href="#" onclick="changeLanguage('zh-CN')">中文</a>
+                          <a href="#" onclick="changeLanguage('en')">English</a>
+                          <a href="#" onclick="changeLanguage('fr')">Français</a>
+                          <a href="#" onclick="changeLanguage('de')">Deutsch</a>
+                          <a href="#" onclick="changeLanguage('hi')">हिन्दी</a>
+                          <a href="#" onclick="changeLanguage('es')">Español</a>
+                          <a href="#" onclick="changeLanguage('th')">ไทย</a>
+                          <a href="#" onclick="changeLanguage('pt-BR')">Português (BR)</a>
+                      </div>
+                  </div>
                 </div>
 
                 <!-- 楼层导航 -->
@@ -197,10 +216,10 @@
 
                   <div class="floor-change-ctn">
                     <div class="floor-change-prev"></div>
-                    <div class="floor-change-tips">点击切换楼层</div>
+                    <div class="floor-change-tips" data-i18n="map_tool.floor_change.tip">点击切换楼层</div>
                     <div class="floor-change-next"></div>
                   </div>
-                  <div class="floor-tips">您正在用分层模式查看<span class="span1">行政辖区</span></div>
+                  <div class="floor-tips"><span data-i18n="map_tool.floor_change.viewing_intro">您正在用分层模式查看</span><span class="span1">行政辖区</span></div>
                  </div>
 
                  <div class="deploy-swiper">
@@ -243,8 +262,8 @@
                 
 
                 <!-- 弹窗 -->
-                  <div class="abcter m-toast">功能开发中，敬请期待</div>
-                  <div class="abcter toast-copy">成功复制到剪切板</div>
+                  <div class="abcter m-toast" data-i18n="map_tool.toast.dev">功能开发中，敬请期待</div>
+                  <div class="abcter toast-copy" data-i18n="map_tool.toast.copy">成功复制到剪切板</div>
               
 
             </div>
@@ -280,6 +299,115 @@
         <script type="text/javascript" src="//game.gtimg.cn/images/dfm/cp/a20240729directory/main.js"></script>
     
   
+<script>
+    const i18next = window.i18next;
+    const i18nextHttpBackend = window.i18nextHttpBackend;
+
+    i18next
+        .use(i18nextHttpBackend)
+        .init({
+            lng: localStorage.getItem('lang') || 'zh-CN', // Default to Chinese as per page content
+            fallbackLng: 'zh-CN', // Fallback to Chinese
+            debug: true,
+            backend: {
+                loadPath: '/locales/{{lng}}/translation.json',
+            },
+        }, (err, t) => {
+            if (err) return console.error(err);
+            
+            setupLanguageSwitcher();
+            updateContent();
+            updateLangSwitcherUI();
+        });
+
+    function updateContent() {
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+            const key = element.getAttribute('data-i18n');
+            const newText = i18next.t(key);
+            if (element.innerHTML !== newText) {
+                element.innerHTML = newText;
+            }
+        });
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+            const key = element.getAttribute('data-i18n-placeholder');
+            const newPlaceholder = i18next.t(key);
+            if (element.placeholder !== newPlaceholder) {
+                element.placeholder = newPlaceholder;
+            }
+        });
+    }
+
+    function changeLanguage(lang, event) {
+        if (event) event.preventDefault();
+        i18next.changeLanguage(lang, (err, t) => {
+            if (err) return console.error(err);
+            localStorage.setItem('lang', lang);
+            updateContent();
+            updateLangSwitcherUI();
+            if (document.querySelector('.lang-switcher')) {
+                document.querySelector('.lang-switcher').classList.remove('show');
+            }
+        });
+    }
+    
+    function updateLangSwitcherUI() {
+        const langMap = {
+            'zh-CN': '中文', 'en': 'English', 'fr': 'Français', 'de': 'Deutsch',
+            'hi': 'हिन्दी', 'es': 'Español', 'th': 'ไทย', 'pt-BR': 'Português (BR)'
+        };
+        const currentLang = i18next.language;
+        const currentLangText = document.getElementById('current-lang-text');
+        if(currentLangText) {
+            currentLangText.textContent = langMap[currentLang] || currentLang;
+        }
+
+        document.querySelectorAll('.lang-switcher-dropdown a').forEach(a => {
+            const lang = a.getAttribute('onclick').match(/'(.*?)'/)[1];
+            if (lang === currentLang) {
+                a.classList.add('active');
+            } else {
+                a.classList.remove('active');
+            }
+        });
+    }
+    
+    function setupLanguageSwitcher() {
+         const switcher = document.querySelector('.lang-switcher');
+         const currentButton = document.querySelector('.lang-switcher-current');
+         const dropdown = document.querySelector('.lang-switcher-dropdown');
+
+        if (!switcher || !currentButton || !dropdown) return;
+
+         currentButton.addEventListener('click', (event) => {
+             event.stopPropagation();
+             switcher.classList.toggle('show');
+         });
+
+         document.querySelectorAll('.lang-switcher-dropdown a').forEach(a => {
+            const lang = a.getAttribute('onclick').match(/'(.*?)'/)[1];
+            a.onclick = (event) => changeLanguage(lang, event);
+         });
+
+         window.addEventListener('click', (event) => {
+             if (switcher && !switcher.contains(event.target)) {
+                 switcher.classList.remove('show');
+             }
+         });
+
+         // Since the map UI might be re-rendered by its own scripts, we use a MutationObserver
+         // to re-apply translations when the DOM changes.
+         const observer = new MutationObserver((mutations) => {
+            // We can debounce this if it becomes a performance issue
+            updateContent();
+         });
+         
+         const config = { childList: true, subtree: true };
+         const targetNode = document.querySelector('.m-main-wrap'); // Observe the main container
+         if (targetNode) {
+            observer.observe(targetNode, config);
+         }
+    }
+</script>
 </body>
 
 </html>
