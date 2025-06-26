@@ -803,28 +803,28 @@
                     </div>
                     <div class="password-grid">
                         <a href="ZeroDam.html" class="password-card-link">
-                            <div class="password-card">
+                        <div class="password-card">
                                 <div class="map-name">零号大坝</div>
-                                <div class="password-value">8649</div>
-                            </div>
+                            <div class="password-value">8649</div>
+                        </div>
                         </a>
                         <a href="Layali Grove.html" class="password-card-link">
-                            <div class="password-card">
-                                <div class="map-name">长弓溪谷</div>
-                                <div class="password-value">0289</div>
-                            </div>
+                        <div class="password-card">
+                            <div class="map-name">长弓溪谷</div>
+                            <div class="password-value">0289</div>
+                        </div>
                         </a>
                         <a href="Brakkesh.html" class="password-card-link">
-                            <div class="password-card">
-                                <div class="map-name">巴克什</div>
-                                <div class="password-value">7335</div>
-                            </div>
+                        <div class="password-card">
+                            <div class="map-name">巴克什</div>
+                            <div class="password-value">7335</div>
+                        </div>
                         </a>
                         <a href="Space City.html" class="password-card-link">
-                            <div class="password-card">
-                                <div class="map-name">航天基地</div>
-                                <div class="password-value">2312</div>
-                            </div>
+                        <div class="password-card">
+                            <div class="map-name">航天基地</div>
+                            <div class="password-value">2312</div>
+                        </div>
                         </a>
                     </div>
                 </section>
@@ -877,16 +877,16 @@
                     </div>
                     <div class="task-list">
                         <a href="map Tool.html" class="task-item-link">
-                            <div class="task-item">
-                                <div class="task-icon">
-                                    <i class="fas fa-bullseye"></i>
-                                </div>
-                                <div class="task-info">
+                        <div class="task-item">
+                            <div class="task-icon">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <div class="task-info">
                                     <h3 data-i18n="tasks.task1_title">互动地图</h3>
                                     <p data-i18n="tasks.task1_desc">查看地图互动</p>
-                                </div>
-                                <div class="task-reward">★★★★★</div>
                             </div>
+                                <div class="task-reward">★★★★★</div>
+                        </div>
                         </a>
                         <div class="task-item">
                             <div class="task-icon">
@@ -1035,23 +1035,23 @@
                 },
             }, (err, t) => {
                 if (err) return console.error(err);
-
+                
                 // The DOM is ready since the script is at the end of the body, and i18next is initialized.
                 // We can now safely set up event listeners and update the UI.
                 setupLanguageSwitcher();
                 updateContent();
                 updatePasswords();
                 updateLangSwitcherUI();
-
+        
                 // Add interaction for other cards
-                document.querySelectorAll('.feature-card, .wiki-category').forEach(card => {
-                    card.addEventListener('click', function() {
-                        this.style.backgroundColor = 'rgba(52, 152, 219, 0.3)';
-                        setTimeout(() => {
-                            this.style.backgroundColor = '';
-                        }, 300);
-                    });
-                });
+        document.querySelectorAll('.feature-card, .wiki-category').forEach(card => {
+            card.addEventListener('click', function() {
+                this.style.backgroundColor = 'rgba(52, 152, 219, 0.3)';
+                setTimeout(() => {
+                    this.style.backgroundColor = '';
+                }, 300);
+            });
+        });
             });
 
         function updateContent() {
@@ -1163,7 +1163,7 @@
                     passwordGrid.innerHTML = ''; 
                     
                     // Update the time display using i18next for formatting
-                    updateTimeEl.textContent = i18next.t('passwords.updated_at', { date: new Date(latestData.date) });
+                    updateTimeEl.textContent = i18next.t('passwords.updated_at', { date: new Date() });
 
                     // Populate new password cards
                     latestData.passwords.forEach(p => {
