@@ -69,6 +69,53 @@
     "brakkesh": "Brakkesh",
     "space_city": "Space City"
   },
+  "map_tool": {
+    "search_placeholder": "Search",
+    "view_layers": "View Map Layers",
+    "large_map_mode": "Large Map Mode",
+    "quick_locate": "Quick Locate",
+    "map_level": {
+      "normal": "Normal",
+      "confidential": "Confidential",
+      "top_secret": "Top Secret",
+      "eve": "Eve",
+      "long_night": "Long Night",
+      "final_night": "Final Night"
+    },
+    "war_mode": {
+      "climb": "Climb",
+      "critical_point": "Critical Point",
+      "penetrate": "Penetrate",
+      "ash_zone": "Ash Zone",
+      "trench_warfare": "Trench Warfare",
+      "blade": "Blade",
+      "derail": "Derail"
+    },
+    "device": {
+      "mobile": "Mobile"
+    },
+    "game_mode": {
+      "attack_defense": "Attack/Defense Mode",
+      "occupation": "Occupation Mode"
+    },
+    "view": {
+      "attacker": "Attacker View",
+      "defender": "Defender View"
+    },
+    "random_event": {
+      "text": "Enable Random Map Events",
+      "none": "None"
+    },
+    "select_all": "Select All",
+    "floor_change": {
+      "tip": "Click to switch floors",
+      "viewing_intro": "Viewing in layered mode:"
+    },
+    "toast": {
+      "dev": "Feature in development, stay tuned",
+      "copy": "Copied to clipboard successfully"
+    }
+  },
   "footer": {
     "logo": "Delta Force Strategy Hub",
     "about1": "Providing the latest and most professional Delta Force game guides, map analyses, weapon reviews, and task walkthroughs. Helping players enhance their gaming experience and become elite operators on the battlefield.",
