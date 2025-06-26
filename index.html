@@ -1163,7 +1163,10 @@
                     passwordGrid.innerHTML = ''; 
                     
                     // Update the time display using i18next for formatting
-                    updateTimeEl.textContent = i18next.t('passwords.updated_at', { date: new Date() });
+                    const today = new Date();
+                    const dateOptions = { month: 'long', day: 'numeric' };
+                    const formattedDate = new Intl.DateTimeFormat(i18next.language, dateOptions).format(today);
+                    updateTimeEl.textContent = i18next.t('passwords.updated_at', { date: formattedDate });
 
                     // Populate new password cards
                     latestData.passwords.forEach(p => {
