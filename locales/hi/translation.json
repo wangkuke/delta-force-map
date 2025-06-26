@@ -1,79 +1,85 @@
 {
-  "site_title": "Delta Force Map & Strategy Guides | DeltaForceMap.com",
-  "site_description": "The most comprehensive map guides, daily passwords, task walkthroughs, and weapon encyclopedia for Delta Force. Visit deltaforcemap.com for the latest professional guides to become an elite operator.",
+  "site_title": "डेल्टा फोर्स मैप और रणनीति गाइड | DeltaForceMap.com",
+  "site_description": "डेल्टा फोर्स के लिए सबसे व्यापक नक्शा गाइड, दैनिक पासवर्ड, कार्य पूर्वाभ्यास, और हथियार विश्वकोश। एक विशिष्ट ऑपरेटर बनने के लिए नवीनतम पेशेवर गाइड के लिए deltaforcemap.com पर जाएं।",
   "nav": {
-    "home": "Home",
-    "map_guides": "Map Guides",
-    "arsenal": "Arsenal",
-    "task_system": "Task System",
-    "community": "Community",
-    "changelog": "Changelog"
+    "home": "होम",
+    "map_guides": "नक्शा गाइड",
+    "arsenal": "शस्त्रागार",
+    "task_system": "कार्य प्रणाली",
+    "community": "समुदाय",
+    "changelog": "चेंजलॉग"
   },
   "header": {
-    "title": "Delta Force",
-    "subtitle": "Strategy Hub"
+    "title": "डेल्टा फोर्स",
+    "subtitle": "रणनीति हब"
   },
   "passwords": {
-    "title": "Daily Map Passwords",
-    "updated_at": "Updated on {{date}}"
+    "title": "दैनिक नक्शा पासवर्ड",
+    "updated_at": "{{date}} को अपडेट किया गया"
   },
   "hot_features": {
-    "title": "Hot Features",
-    "simulator": "Case Simulator",
-    "buy_recommend": "Loadout Recommend",
-    "cloud_storage": "Gunsmith Blueprints",
-    "loadout": "Lowest Price Keys",
-    "mouse_unboxing": "Case Opener Sim",
-    "key_bullet_price": "Custom Bullet Pack",
-    "bullet_exchange": "Bullet Exchange",
-    "loadout_recommend": "Loadout Recommend"
+    "title": "हॉट फीचर्स",
+    "simulator": "केस सिम्युलेटर",
+    "buy_recommend": "लोडआउट सिफारिश",
+    "cloud_storage": "गनस्मिथ ब्लूप्रिंट",
+    "loadout": "सबसे कम कीमत की चाबियाँ",
+    "mouse_unboxing": "केस ओपनर सिम",
+    "key_bullet_price": "कस्टम बुलेट पैक",
+    "bullet_exchange": "बुलेट एक्सचेंज",
+    "loadout_recommend": "लोडआउट सिफारिश"
   },
   "tasks": {
-    "title": "Task Column",
-    "task1_title": "Special Ops Crafting",
-    "task1_desc": "Complete 5 weapon crafting tasks",
-    "task2_title": "Market Movers",
-    "task2_desc": "Market trends updated hourly",
-    "task3_title": "Loyalty Drop",
-    "task3_desc": "Complete 3 loyalty tasks",
-    "task4_title": "Gunsmith Blueprints",
-    "task4_desc": "Customize and test 5 weapon configurations"
+    "title": "कार्य कॉलम",
+    "task1_title": "विशेष ऑप्स क्राफ्टिंग",
+    "task1_desc": "5 हथियार क्राफ्टिंग कार्य पूरे करें",
+    "task2_title": "मार्केट मूवर्स",
+    "task2_desc": "बाजार के रुझान हर घंटे अपडेट होते हैं",
+    "task3_title": "लॉयल्टी ड्रॉप",
+    "task3_desc": "3 लॉयल्टी कार्य पूरे करें",
+    "task4_title": "गनस्मिथ ब्लूप्रिंट",
+    "task4_desc": "5 हथियार कॉन्फ़िगरेशन को अनुकूलित और परीक्षण करें"
   },
   "wiki": {
-    "title": "Wiki & Guides",
-    "map_analysis": "Map Analysis",
-    "weapon_guide": "Weapon Guides",
-    "character_skills": "Operator Skills",
-    "achievement_guide": "Achievement Guides",
-    "enemy_handbook": "Enemy Intel",
-    "game_mechanics": "Game Mechanics"
+    "title": "विकी और गाइड",
+    "map_analysis": "नक्शा विश्लेषण",
+    "weapon_guide": "हथियार गाइड",
+    "character_skills": "ऑपरेटर कौशल",
+    "achievement_guide": "उपलब्धि गाइड",
+    "enemy_handbook": "दुश्मन इंटेल",
+    "game_mechanics": "गेम मैकेनिक्स"
   },
   "sidebar": {
-    "market_trends_title": "Market Movers",
-    "market_trends_subtitle": "Trends updated hourly",
-    "market_trends_action": "View Market",
-    "crafting_title": "Special Ops Crafting",
-    "crafting_subtitle": "Top Profit Recipes",
-    "crafting_action": "View Recipes",
-    "discord_title": "Join our Community",
-    "discord_desc": "Join 10,000+ players to talk tactics and squad up",
-    "discord_action": "Join Discord",
-    "events_title": "Latest Events",
-    "event1": "Double Login Rewards",
-    "event2": "Weekend Challenge",
-    "event3": "Invite a Friend Event"
+    "market_trends_title": "मार्केट मूवर्स",
+    "market_trends_subtitle": "घंटे के हिसाब से अपडेट किए गए रुझान",
+    "market_trends_action": "बाजार देखें",
+    "crafting_title": "विशेष सेवा क्राफ्टिंग",
+    "crafting_subtitle": "उच्चतम लाभ सिफारिशें",
+    "crafting_action": "व्यंजन देखें",
+    "discord_title": "हमारे समुदाय में शामिल हों",
+    "discord_desc": "10,000+ अन्य ऑपरेटरों के साथ रणनीति पर बात करें, टीम बनाएं और मिशन पूरा करें।",
+    "discord_action": "डिस्कॉर्ड से जुड़ें",
+    "events_title": "नवीनतम घटनाएँ",
+    "event1": "डबल लॉगिन पुरस्कार",
+    "event2": "सप्ताहांत चुनौती",
+    "event3": "मित्र रेफरल अभियान"
+  },
+  "maps": {
+    "zero_dam": "ज़ीरो डैम",
+    "layali_grove": "लायाली ग्रोव",
+    "brakkesh": "ब्रकेश",
+    "space_city": "स्पेस सिटी"
   },
   "footer": {
-    "logo": "Delta Force Strategy Hub",
-    "about1": "Providing the latest and most professional Delta Force game guides, map analyses, weapon reviews, and task walkthroughs. Helping players enhance their gaming experience and become elite operators.",
-    "about2": "This is an unofficial fan-made strategy website and is not affiliated with the game developers.",
-    "quick_links": "Quick Links",
-    "resource_center": "Resources",
-    "downloads": "Downloads",
-    "video_guides": "Video Guides",
-    "forums": "Forums",
-    "faq": "FAQ",
-    "contact_us": "Contact Us",
-    "copyright": "&copy; 2023 Delta Force Strategy Hub | This website is for strategy sharing. All game content copyrights belong to their respective developers."
+    "logo": "डेल्टा फोर्स रणनीति हब",
+    "about1": "नवीनतम और सबसे पेशेवर डेल्टा फोर्स गेम गाइड, नक्शा विश्लेषण, हथियार समीक्षा और कार्य पूर्वाभ्यास प्रदान करना। खिलाड़ियों को अपने गेमिंग अनुभव को बढ़ाने और युद्ध के मैदान में विशिष्ट ऑपरेटर बनने में मदद करना।",
+    "about2": "यह एक अनौपचारिक प्रशंसक-निर्मित रणनीति वेबसाइट है और गेम डेवलपर्स से संबद्ध नहीं है।",
+    "quick_links": "त्वरित लिंक",
+    "resource_center": "संसाधन",
+    "downloads": "डाउनलोड",
+    "video_guides": "वीडियो गाइड",
+    "forums": "मंच",
+    "faq": "सामान्य प्रश्न",
+    "contact_us": "हमसे संपर्क करें",
+    "copyright": "© 2023 डेल्टा फोर्स रणनीति हब | यह वेबसाइट रणनीति साझा करने के लिए है। सभी गेम सामग्री कॉपीराइट उनके संबंधित डेवलपर्स के हैं।"
   }
 } 
