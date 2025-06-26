@@ -50,22 +50,28 @@
   },
   "sidebar": {
     "market_trends_title": "Market Movers",
-    "market_trends_subtitle": "Trends updated hourly",
+    "market_trends_subtitle": "Hourly updated trends",
     "market_trends_action": "View Market",
-    "crafting_title": "Special Ops Crafting",
-    "crafting_subtitle": "Top Profit Recipes",
+    "crafting_title": "Special Service Crafting",
+    "crafting_subtitle": "Highest profit recommendations",
     "crafting_action": "View Recipes",
     "discord_title": "Join our Community",
-    "discord_desc": "Join 10,000+ players to talk tactics and squad up",
+    "discord_desc": "Chat tactics, squad up, and complete missions with 10,000+ other operators.",
     "discord_action": "Join Discord",
     "events_title": "Latest Events",
     "event1": "Double Login Rewards",
     "event2": "Weekend Challenge",
-    "event3": "Invite a Friend Event"
+    "event3": "Friend Referral Campaign"
+  },
+  "maps": {
+    "zero_dam": "Zero Dam",
+    "layali_grove": "Layali Grove",
+    "brakkesh": "Brakkesh",
+    "space_city": "Space City"
   },
   "footer": {
     "logo": "Delta Force Strategy Hub",
-    "about1": "Providing the latest and most professional Delta Force game guides, map analyses, weapon reviews, and task walkthroughs. Helping players enhance their gaming experience and become elite operators.",
+    "about1": "Providing the latest and most professional Delta Force game guides, map analyses, weapon reviews, and task walkthroughs. Helping players enhance their gaming experience and become elite operators on the battlefield.",
     "about2": "This is an unofficial fan-made strategy website and is not affiliated with the game developers.",
     "quick_links": "Quick Links",
     "resource_center": "Resources",
