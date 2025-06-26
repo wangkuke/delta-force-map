@@ -30,14 +30,10 @@
   },
   "tasks": {
     "title": "Task Column",
-    "task1_title": "Special Ops Crafting",
-    "task1_desc": "Complete 5 weapon crafting tasks",
-    "task2_title": "Market Movers",
-    "task2_desc": "Market trends updated hourly",
-    "task3_title": "Loyalty Drop",
-    "task3_desc": "Complete 3 loyalty tasks",
+    "task1_title": "Interactive Map",
+    "task1_desc": "View the interactive map",
     "task4_title": "Gunsmith Blueprints",
-    "task4_desc": "Customize and test 5 weapon configurations"
+    "task4_desc": "Delta Force map build for now"
   },
   "wiki": {
     "title": "Wiki & Guides",
