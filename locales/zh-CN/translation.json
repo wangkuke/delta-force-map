@@ -69,6 +69,53 @@
     "brakkesh": "巴克什",
     "space_city": "航天基地"
   },
+  "map_tool": {
+    "search_placeholder": "搜索",
+    "view_layers": "查看地图分层",
+    "large_map_mode": "大地图模式",
+    "quick_locate": "地图快速定位",
+    "map_level": {
+      "normal": "普通",
+      "confidential": "机密",
+      "top_secret": "绝密",
+      "eve": "前夜",
+      "long_night": "长夜",
+      "final_night": "终夜"
+    },
+    "war_mode": {
+      "climb": "攀升",
+      "critical_point": "临界点",
+      "penetrate": "贯穿",
+      "ash_zone": "烬区",
+      "trench_warfare": "堑壕战",
+      "blade": "刀锋",
+      "derail": "断轨"
+    },
+    "device": {
+      "mobile": "移动"
+    },
+    "game_mode": {
+      "attack_defense": "攻防模式",
+      "occupation": "占领模式"
+    },
+    "view": {
+      "attacker": "攻方视角",
+      "defender": "守方视角"
+    },
+    "random_event": {
+      "text": "开启地图随机事件",
+      "none": "暂无"
+    },
+    "select_all": "全选",
+    "floor_change": {
+      "tip": "点击切换楼层",
+      "viewing_intro": "您正在用分层模式查看"
+    },
+    "toast": {
+      "dev": "功能开发中，敬请期待",
+      "copy": "成功复制到剪切板"
+    }
+  },
   "footer": {
     "logo": "三角洲行动攻略站",
     "about1": "提供最新、最专业的三角洲行动游戏攻略、地图解析、武器评测和任务指南。助力玩家提升游戏体验，成为战场精英。",
