@@ -1172,10 +1172,18 @@
 
                     // Populate new password cards
                     latestData.passwords.forEach(p => {
+                        const mapKeyMap = {
+                            '零号大坝': 'maps.zero_dam', 'Zero Dam': 'maps.zero_dam',
+                            '长弓溪谷': 'maps.layali_grove', 'Layali Grove': 'maps.layali_grove',
+                            '巴克什': 'maps.brakkesh', 'Brakkesh': 'maps.brakkesh',
+                            '航天基地': 'maps.space_city', 'Space City': 'maps.space_city'
+                        };
+                        const mapKey = mapKeyMap[p.map] || p.map;
+
                         const card = document.createElement('div');
                         card.className = 'password-card';
                         card.innerHTML = `
-                            <div class="map-name">${p.map}</div>
+                            <div class="map-name">${i18next.t(mapKey, { defaultValue: p.map })}</div>
                             <div class="password-value">${p.code}</div>
                         `;
                         
