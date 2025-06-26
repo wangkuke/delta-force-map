@@ -30,14 +30,10 @@
   },
   "tasks": {
     "title": "任务专栏",
-    "task1_title": "特勤处制造",
-    "task1_desc": "完成5次武器制造任务",
-    "task2_title": "交易行涨幅榜",
-    "task2_desc": "每小时更新市场趋势",
-    "task3_title": "忠诚直降",
-    "task3_desc": "完成3次忠诚度任务",
+    "task1_title": "互动地图",
+    "task1_desc": "查看地图互动",
     "task4_title": "改枪方案",
-    "task4_desc": "定制并测试5种武器配置"
+    "task4_desc": "delta force map build for now"
   },
   "wiki": {
     "title": "百科攻略",
