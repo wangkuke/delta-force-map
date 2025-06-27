@@ -766,7 +766,7 @@
             <nav>
                 <ul>
                     <li><a href="index.html" class="active" data-i18n="nav.home">Home</a></li>
-                    <li><a href="map Tool.html" data-i18n="nav.map_guides">Map Guides</a></li>
+                    <li><a href="mapTool.html" data-i18n="nav.map_guides">Map Guides</a></li>
                     <li><a href="#" data-i18n="nav.arsenal">Arsenal</a></li>
                     <li><a href="#" data-i18n="nav.task_system">Task System</a></li>
                     <li><a href="#" data-i18n="nav.community">Community</a></li>
@@ -805,27 +805,41 @@
                         <a href="ZeroDam.html" class="password-card-link">
                         <div class="password-card">
                                 <div class="map-name">零号大坝</div>
-                            <div class="password-value">8649</div>
+                            <div class="password-value">4984</div>
                         </div>
                         </a>
-                        <a href="Layali Grove.html" class="password-card-link">
+                        <a href="LayaliGrove.html" class="password-card-link">
                         <div class="password-card">
                             <div class="map-name">长弓溪谷</div>
-                            <div class="password-value">0289</div>
+                            <div class="password-value">2179</div>
                         </div>
                         </a>
                         <a href="Brakkesh.html" class="password-card-link">
                         <div class="password-card">
                             <div class="map-name">巴克什</div>
-                            <div class="password-value">7335</div>
+                            <div class="password-value">8028</div>
                         </div>
                         </a>
-                        <a href="Space City.html" class="password-card-link">
+                        <a href="SpaceCity.html" class="password-card-link">
                         <div class="password-card">
                             <div class="map-name">航天基地</div>
-                            <div class="password-value">2312</div>
+                            <div class="password-value">2176</div>
                         </div>
                         </a>
+                    </a>
+                    <a href="#" class="password-card-link">
+                    <div class="password-card">
+                        <div class="map-name">瓦尔基里</div>
+                        <div class="password-value">0000</div>
+                    </div>
+                    </a>
+                </a>
+                <a href="#" class="password-card-link">
+                <div class="password-card">
+                    <div class="map-name">衔尾蛇行动</div>
+                    <div class="password-value">0000</div>
+                </div>
+                </a>
                     </div>
                 </section>
 
@@ -876,7 +890,7 @@
                         <h2 class="card-title"><i class="fas fa-tasks"></i> <span data-i18n="tasks.title">任务专栏</span></h2>
                     </div>
                     <div class="task-list">
-                        <a href="map Tool.html" class="task-item-link">
+                        <a href="mapTool.html" class="task-item-link">
                         <div class="task-item">
                             <div class="task-icon">
                                 <i class="fas fa-bullseye"></i>
@@ -1172,9 +1186,11 @@
                     latestData.passwords.forEach(p => {
                         const mapKeyMap = {
                             '零号大坝': 'maps.zero_dam', 'Zero Dam': 'maps.zero_dam',
-                            '长弓溪谷': 'maps.layali_grove', 'Layali Grove': 'maps.layali_grove',
+                            '长弓溪谷': 'maps.layali_grove', 'LayaliGrove': 'maps.layali_grove',
                             '巴克什': 'maps.brakkesh', 'Brakkesh': 'maps.brakkesh',
-                            '航天基地': 'maps.space_city', 'Space City': 'maps.space_city'
+                            '航天基地': 'maps.space_city', 'SpaceCity': 'maps.space_city',
+                            '瓦尔基里': 'maps.valkyrie', 'Valkyrie': 'maps.valkyrie',
+                            '衔尾蛇行动': 'maps.operation_ouroboros', 'Operation Ouroboros': 'maps.operation_ouroboros'
                         };
                         const mapKey = mapKeyMap[p.map] || p.map;
 
@@ -1187,19 +1203,15 @@
                         
                         let linkUrl = null;
                         if (p.map === '零号大坝' || p.map === 'Zero Dam') linkUrl = 'ZeroDam.html';
-                        if (p.map === '长弓溪谷' || p.map === 'Layali Grove') linkUrl = 'Layali Grove.html';
+                        if (p.map === '长弓溪谷' || p.map === 'LayaliGrove') linkUrl = 'LayaliGrove.html';
                         if (p.map === '巴克什' || p.map === 'Brakkesh') linkUrl = 'Brakkesh.html';
-                        if (p.map === '航天基地' || p.map === 'Space City') linkUrl = 'Space City.html';
+                        if (p.map === '航天基地' || p.map === 'SpaceCity') linkUrl = 'SpaceCity.html';
 
-                        if (linkUrl) {
-                            const link = document.createElement('a');
-                            link.href = linkUrl;
-                            link.className = 'password-card-link';
-                            link.appendChild(card);
-                            passwordGrid.appendChild(link);
-                        } else {
-                            passwordGrid.appendChild(card);
-                        }
+                        const link = document.createElement('a');
+                        link.href = linkUrl || '#';
+                        link.className = 'password-card-link';
+                        link.appendChild(card);
+                        passwordGrid.appendChild(link);
                     });
                 })
                 .catch(error => {
