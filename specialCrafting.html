@@ -547,11 +547,11 @@
         <!-- Filter Controls -->
         <div class="filter-controls">
             <div class="filter-group">
-                <button class="filter-btn active" data-i18n="crafting.filter_all">All</button>
-                <button class="filter-btn" data-i18n="crafting.filter_tech_center">Tech Center</button>
-                <button class="filter-btn" data-i18n="crafting.filter_workbench">Workbench</button>
-                <button class="filter-btn" data-i18n="crafting.filter_medicine">Med Station</button>
-                <button class="filter-btn" data-i18n="crafting.filter_armor">Armor Station</button>
+                <button class="filter-btn active" data-i18n="crafting.filter_all" data-filter="all">All</button>
+                <button class="filter-btn" data-i18n="crafting.filter_tech_center" data-filter="tech_center">Tech Center</button>
+                <button class="filter-btn" data-i18n="crafting.filter_workbench" data-filter="workbench">Workbench</button>
+                <button class="filter-btn" data-i18n="crafting.filter_medicine" data-filter="medicine">Med Station</button>
+                <button class="filter-btn" data-i18n="crafting.filter_armor" data-filter="armor">Armor Station</button>
             </div>
             <div class="filter-group">
                 <select class="sort-select">
@@ -565,9 +565,9 @@
         <!-- Crafting Cards -->
         <div class="crafting-grid">
             <!-- OLIGHT WARRIOR 3S战术手电 -->
-            <div class="crafting-card" data-category="Tech Center">
+            <div class="crafting-card" data-category="tech_center">
                 <div class="crafting-img">
-                    <img src="3S战术手电.png" alt="OLIGHT WARRIOR 3S战术手电" style="max-height: 100%;">
+                    <img src="3S战术手电.png" alt="OLIGHT WARRIOR 3S Tactical Flashlight" style="max-height: 100%;">
                 </div>
                 <h3 class="crafting-title" data-i18n="crafting.items.flashlight">OLIGHT WARRIOR 3S Tactical Flashlight</h3>
                 <div class="crafting-stats">
@@ -587,7 +587,7 @@
             </div>
 
             <!-- 12 Gauge 龙息弹 -->
-            <div class="crafting-card" data-category="Workbench">
+            <div class="crafting-card" data-category="workbench">
                 <div class="crafting-img">
                     <i class="fas fa-fire" style="font-size: 5rem; color: var(--warning);"></i>
                 </div>
@@ -609,7 +609,7 @@
             </div>
 
             <!-- .300BLK -->
-            <div class="crafting-card" data-category="Workbench">
+            <div class="crafting-card" data-category="workbench">
                 <div class="crafting-img">
                     <i class="fas fa-bullseye" style="font-size: 5rem; color: var(--warning);"></i>
                 </div>
@@ -631,7 +631,7 @@
             </div>
 
             <!-- 4.6x30mm FMJ SX -->
-            <div class="crafting-card" data-category="Workbench">
+            <div class="crafting-card" data-category="workbench">
                 <div class="crafting-img">
                     <i class="fas fa-bolt" style="font-size: 5rem; color: var(--warning);"></i>
                 </div>
@@ -653,7 +653,7 @@
             </div>
             
             <!-- 死寂消音器 -->
-            <div class="crafting-card" data-category="Tech Center">
+            <div class="crafting-card" data-category="tech_center">
                 <div class="crafting-img">
                     <i class="fas fa-gun" style="font-size: 5rem; color: var(--info);"></i>
                 </div>
@@ -675,7 +675,7 @@
             </div>
             
             <!-- MRGS镂空枪托 -->
-            <div class="crafting-card" data-category="Tech Center">
+            <div class="crafting-card" data-category="tech_center">
                 <div class="crafting-img">
                     <img src="镂空枪托.png" alt="MRGS Skeletonized Stock" style="max-height: 100%;">
                 </div>
@@ -697,7 +697,7 @@
             </div>
 
             <!-- 精密头盔维修包 -->
-            <div class="crafting-card" data-category="Medicine">
+            <div class="crafting-card" data-category="medicine">
                 <div class="crafting-img">
                     <i class="fas fa-helmet-safety" style="font-size: 5rem; color: var(--info);"></i>
                 </div>
@@ -719,7 +719,7 @@
             </div>
 
             <!-- 精密护甲维修包 -->
-            <div class="crafting-card" data-category="Medicine">
+            <div class="crafting-card" data-category="medicine">
                 <div class="crafting-img">
                     <i class="fas fa-shield-alt" style="font-size: 5rem; color: var(--info);"></i>
                 </div>
@@ -741,7 +741,7 @@
             </div>
 
             <!-- OE2战斗兴奋剂 -->
-            <div class="crafting-card" data-category="Medicine">
+            <div class="crafting-card" data-category="medicine">
                 <div class="crafting-img">
                     <i class="fas fa-syringe" style="font-size: 5rem; color: var(--info);"></i>
                 </div>
@@ -763,7 +763,7 @@
             </div>
 
             <!-- 精英防弹背心 -->
-            <div class="crafting-card" data-category="Armor">
+            <div class="crafting-card" data-category="armor">
                 <div class="crafting-img">
                     <i class="fas fa-vest" style="font-size: 5rem; color: var(--warning);"></i>
                 </div>
@@ -785,7 +785,7 @@
             </div>
 
             <!-- 重型突击背心 -->
-            <div class="crafting-card" data-category="Armor">
+            <div class="crafting-card" data-category="armor">
                 <div class="crafting-img">
                     <i class="fas fa-vest-patches" style="font-size: 5rem; color: var(--warning);"></i>
                 </div>
@@ -807,7 +807,7 @@
             </div>
 
             <!-- FS复合防弹衣 -->
-            <div class="crafting-card" data-category="Armor">
+            <div class="crafting-card" data-category="armor">
                 <div class="crafting-img">
                     <i class="fas fa-shield-virus" style="font-size: 5rem; color: var(--warning);"></i>
                 </div>
@@ -873,7 +873,7 @@
             const cards = document.querySelectorAll('.crafting-card');
             
             cards.forEach(card => {
-                if (category === 'All' || card.getAttribute('data-category') === category) {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
                     card.style.display = 'flex';
                 } else {
                     card.style.display = 'none';
@@ -888,7 +888,7 @@
                     document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
                     this.classList.add('active');
                     
-                    const category = this.textContent;
+                    const category = this.getAttribute('data-filter');
                     filterCards(category);
                 });
             });
