@@ -766,7 +766,7 @@
             <nav>
                 <ul>
                     <li><a href="index.html" class="active" data-i18n="nav.home">Home</a></li>
-                    <li><a href="mapTool.html" data-i18n="nav.map_guides">Map Guides</a></li>
+                    <li><a href="mapTool.html" data-i18n="nav.map_guides">Map Tools</a></li>
                     <li><a href="#" data-i18n="nav.arsenal">Arsenal</a></li>
                     <li><a href="#" data-i18n="nav.task_system">Task System</a></li>
                     <li><a href="#" data-i18n="nav.community">Community</a></li>
@@ -1011,7 +1011,7 @@
                 <h3 data-i18n="footer.quick_links">快速链接</h3>
                 <ul>
                     <li><a href="index.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav.home">首页</span></a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> <span data-i18n="nav.map_guides">地图攻略</span></a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> <span data-i18n="nav.map_guides">地图工具</span></a></li>
                     <li><a href="#"><i class="fas fa-chevron-right"></i> <span data-i18n="nav.arsenal">武器数据库</span></a></li>
                     <li><a href="#"><i class="fas fa-chevron-right"></i> <span data-i18n="nav.task_system">任务指南</span></a></li>
                     <li><a href="#"><i class="fas fa-chevron-right"></i> <span data-i18n="nav.changelog">游戏更新</span></a></li>
@@ -1156,68 +1156,73 @@
         
         // Function to fetch passwords and populate the grid
         function updatePasswords() {
-            fetch('passwords.json')
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok, using fallback content.');
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    const latestData = data[0]; // Assuming the first entry is the latest
-                    const passwordGrid = document.querySelector('.password-grid');
-                    const updateTimeEl = document.querySelector('.update-time');
+            const data = [
+              {
+                "passwords": [
+                  { "map": "零号大坝", "code": "4984" },
+                  { "map": "长弓溪谷", "code": "2179" },
+                  { "map": "巴克什", "code": "8028" },
+                  { "map": "航天基地", "code": "2176" },
+                  { "map": "瓦尔基里", "code": "0000" },
+                  { "map": "衔尾蛇行动", "code": "0000" }
+                ]
+              }
+            ];
+            
+            try {
+                const latestData = data[0]; // Assuming the first entry is the latest
+                const passwordGrid = document.querySelector('.password-grid');
+                const updateTimeEl = document.querySelector('.update-time');
 
-                    if (!latestData || !passwordGrid || !updateTimeEl) {
-                        console.error('Could not find necessary elements to update passwords.');
-                        return;
-                    }
+                if (!latestData || !passwordGrid || !updateTimeEl) {
+                    console.error('Could not find necessary elements to update passwords.');
+                    return;
+                }
 
-                    // Clear any existing content
-                    passwordGrid.innerHTML = ''; 
+                // Clear any existing content
+                passwordGrid.innerHTML = ''; 
+                
+                // Update the time display using i18next for formatting
+                const today = new Date();
+                const dateOptions = { month: 'long', day: 'numeric' };
+                const formattedDate = new Intl.DateTimeFormat(i18next.language, dateOptions).format(today);
+                updateTimeEl.textContent = i18next.t('passwords.updated_at', { date: formattedDate });
+
+                // Populate new password cards
+                latestData.passwords.forEach(p => {
+                    const mapKeyMap = {
+                        '零号大坝': 'maps.zero_dam', 'Zero Dam': 'maps.zero_dam',
+                        '长弓溪谷': 'maps.layali_grove', 'LayaliGrove': 'maps.layali_grove',
+                        '巴克什': 'maps.brakkesh', 'Brakkesh': 'maps.brakkesh',
+                        '航天基地': 'maps.space_city', 'SpaceCity': 'maps.space_city',
+                        '瓦尔基里': 'maps.valkyrie', 'Valkyrie': 'maps.valkyrie',
+                        '衔尾蛇行动': 'maps.operation_ouroboros', 'Operation Ouroboros': 'maps.operation_ouroboros'
+                    };
+                    const mapKey = mapKeyMap[p.map] || p.map;
+
+                    const card = document.createElement('div');
+                    card.className = 'password-card';
+                    card.innerHTML = `
+                        <div class="map-name">${i18next.t(mapKey, { defaultValue: p.map })}</div>
+                        <div class="password-value">${p.code}</div>
+                    `;
                     
-                    // Update the time display using i18next for formatting
-                    const today = new Date();
-                    const dateOptions = { month: 'long', day: 'numeric' };
-                    const formattedDate = new Intl.DateTimeFormat(i18next.language, dateOptions).format(today);
-                    updateTimeEl.textContent = i18next.t('passwords.updated_at', { date: formattedDate });
+                    let linkUrl = null;
+                    if (p.map === '零号大坝' || p.map === 'Zero Dam') linkUrl = 'ZeroDam.html';
+                    if (p.map === '长弓溪谷' || p.map === 'LayaliGrove') linkUrl = 'LayaliGrove.html';
+                    if (p.map === '巴克什' || p.map === 'Brakkesh') linkUrl = 'Brakkesh.html';
+                    if (p.map === '航天基地' || p.map === 'SpaceCity') linkUrl = 'SpaceCity.html';
 
-                    // Populate new password cards
-                    latestData.passwords.forEach(p => {
-                        const mapKeyMap = {
-                            '零号大坝': 'maps.zero_dam', 'Zero Dam': 'maps.zero_dam',
-                            '长弓溪谷': 'maps.layali_grove', 'LayaliGrove': 'maps.layali_grove',
-                            '巴克什': 'maps.brakkesh', 'Brakkesh': 'maps.brakkesh',
-                            '航天基地': 'maps.space_city', 'SpaceCity': 'maps.space_city',
-                            '瓦尔基里': 'maps.valkyrie', 'Valkyrie': 'maps.valkyrie',
-                            '衔尾蛇行动': 'maps.operation_ouroboros', 'Operation Ouroboros': 'maps.operation_ouroboros'
-                        };
-                        const mapKey = mapKeyMap[p.map] || p.map;
-
-                        const card = document.createElement('div');
-                        card.className = 'password-card';
-                        card.innerHTML = `
-                            <div class="map-name">${i18next.t(mapKey, { defaultValue: p.map })}</div>
-                            <div class="password-value">${p.code}</div>
-                        `;
-                        
-                        let linkUrl = null;
-                        if (p.map === '零号大坝' || p.map === 'Zero Dam') linkUrl = 'ZeroDam.html';
-                        if (p.map === '长弓溪谷' || p.map === 'LayaliGrove') linkUrl = 'LayaliGrove.html';
-                        if (p.map === '巴克什' || p.map === 'Brakkesh') linkUrl = 'Brakkesh.html';
-                        if (p.map === '航天基地' || p.map === 'SpaceCity') linkUrl = 'SpaceCity.html';
-
-                        const link = document.createElement('a');
-                        link.href = linkUrl || '#';
-                        link.className = 'password-card-link';
-                        link.appendChild(card);
-                        passwordGrid.appendChild(link);
-                    });
-                })
-                .catch(error => {
-                    console.error(error);
-                    // Do nothing to the DOM, the hardcoded version will be kept.
+                    const link = document.createElement('a');
+                    link.href = linkUrl || '#';
+                    link.className = 'password-card-link';
+                    link.appendChild(card);
+                    passwordGrid.appendChild(link);
                 });
+            } catch (error) {
+                console.error("Error updating passwords from hardcoded data:", error);
+                // If something goes wrong, the static HTML will remain.
+            }
         }
     </script>
 </body>
