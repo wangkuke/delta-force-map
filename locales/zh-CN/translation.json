@@ -1,0 +1,130 @@
+{
+  "site_title": "三角洲行动地图攻略 (Delta Force Map) - 专业游戏攻略站 | DeltaForceMap.com",
+  "site_description": "三角洲行动 (Delta Force) 游戏最全地图攻略、每日地图密码、任务指南和武器百科。访问 deltaforcemap.com 获取最新、最专业的三角洲行动游戏攻略，成为战场精英。",
+  "nav": {
+    "home": "首页",
+    "map_guides": "地图攻略",
+    "arsenal": "武器库",
+    "task_system": "任务系统",
+    "community": "玩家社区",
+    "changelog": "更新日志"
+  },
+  "header": {
+    "title": "三角洲行动",
+    "subtitle": "攻略站"
+  },
+  "passwords": {
+    "title": "每日地图密码",
+    "updated_at": "更新于{{date}}"
+  },
+  "hot_features": {
+    "title": "热门功能",
+    "simulator": "模拟开箱",
+    "buy_recommend": "战备推荐",
+    "cloud_storage": "改枪方案",
+    "loadout": "底价钥匙",
+    "mouse_unboxing": "鼠标开箱",
+    "key_bullet_price": "子弹自选包",
+    "bullet_exchange": "子弹兑换收益",
+    "loadout_recommend": "战备推荐"
+  },
+  "tasks": {
+    "title": "任务专栏",
+    "task1_title": "互动地图",
+    "task1_desc": "查看地图互动",
+    "task4_title": "改枪方案",
+    "task4_desc": "delta force map build for now"
+  },
+  "wiki": {
+    "title": "百科攻略",
+    "map_analysis": "地图解析",
+    "weapon_guide": "武器指南",
+    "character_skills": "角色技能",
+    "achievement_guide": "成就攻略",
+    "enemy_handbook": "敌人图鉴",
+    "game_mechanics": "游戏机制"
+  },
+  "sidebar": {
+    "market_trends_title": "交易行涨幅榜",
+    "market_trends_subtitle": "每小时更新趋势",
+    "market_trends_action": "查看市场动态",
+    "crafting_title": "特勤处制造",
+    "crafting_subtitle": "最高收益推荐",
+    "crafting_action": "查看制造配方",
+    "discord_title": "加入玩家社区",
+    "discord_desc": "与10,000+玩家交流战术、组队完成任务",
+    "discord_action": "加入Discord",
+    "events_title": "最新活动",
+    "event1": "登录奖励双倍",
+    "event2": "周末挑战赛",
+    "event3": "邀请好友活动"
+  },
+  "maps": {
+    "zero_dam": "零号大坝",
+    "layali_grove": "长弓溪谷",
+    "brakkesh": "巴克什",
+    "space_city": "航天基地",
+    "valkyrie": "瓦尔基里",
+    "operation_ouroboros": "衔尾蛇行动"
+  },
+  "map_tool": {
+    "search_placeholder": "搜索",
+    "view_layers": "查看地图分层",
+    "large_map_mode": "大地图模式",
+    "quick_locate": "地图快速定位",
+    "map_level": {
+      "normal": "普通",
+      "confidential": "机密",
+      "top_secret": "绝密",
+      "eve": "前夜",
+      "long_night": "长夜",
+      "final_night": "终夜"
+    },
+    "war_mode": {
+      "climb": "攀升",
+      "critical_point": "临界点",
+      "penetrate": "贯穿",
+      "ash_zone": "烬区",
+      "trench_warfare": "堑壕战",
+      "blade": "刀锋",
+      "derail": "断轨"
+    },
+    "device": {
+      "mobile": "移动"
+    },
+    "game_mode": {
+      "attack_defense": "攻防模式",
+      "occupation": "占领模式"
+    },
+    "view": {
+      "attacker": "攻方视角",
+      "defender": "守方视角"
+    },
+    "random_event": {
+      "text": "开启地图随机事件",
+      "none": "暂无"
+    },
+    "select_all": "全选",
+    "floor_change": {
+      "tip": "点击切换楼层",
+      "viewing_intro": "您正在用分层模式查看"
+    },
+    "toast": {
+      "dev": "功能开发中，敬请期待",
+      "copy": "成功复制到剪切板"
+    }
+  },
+  "footer": {
+    "logo": "三角洲行动攻略站",
+    "about1": "提供最新、最专业的三角洲行动游戏攻略、地图解析、武器评测和任务指南。助力玩家提升游戏体验，成为战场精英。",
+    "about2": "本站为非官方攻略站，与游戏开发商无关联。",
+    "quick_links": "快速链接",
+    "resource_center": "资源中心",
+    "downloads": "下载中心",
+    "video_guides": "视频攻略",
+    "forums": "玩家论坛",
+    "faq": "常见问题",
+    "contact_us": "联系我们",
+    "copyright": "&copy; 2023 三角洲行动攻略站 | 本网站仅用于游戏攻略交流，所有游戏内容版权归其开发商所有"
+  }
+} 
