@@ -836,15 +836,15 @@
                 <!-- Hot Features -->
                 <section class="card">
                     <div class="card-header">
-                        <h2 class="card-title"><i class="fas fa-fire"></i> <span data-i18n="hot_features.title">地图战利品</span></h2>
+                        <h2 class="card-title"><i class="fas fa-fire"></i> <span data-i18n="home.loot_links_title">地图战利品</span></h2>
                     </div>
                     <div class="loot-links-container">
-                        <a href="ZeroDamMapLoot.html" class="loot-link-item">零号大坝地图战利品</a>
-                        <a href="LayaliGroveMapLoot.html" class="loot-link-item">长弓溪谷地图战利品</a>
-                        <a href="#" class="loot-link-item">巴克什地图战利品</a>
-                        <a href="#" class="loot-link-item">航天基地地图战利品</a>
-                        <a href="#" class="loot-link-item">瓦尔基里地图战利品</a>
-                        <a href="#" class="loot-link-item">衔尾蛇行动地图战利品</a>
+                        <a href="ZeroDamMapLoot.html" class="loot-link-item" data-i18n="home.zero_dam_loot">零号大坝地图战利品</a>
+                        <a href="LayaliGroveMapLoot.html" class="loot-link-item" data-i18n="home.layali_grove_loot">长弓溪谷地图战利品</a>
+                        <a href="#" class="loot-link-item" data-i18n="home.brakkesh_loot">巴克什地图战利品</a>
+                        <a href="#" class="loot-link-item" data-i18n="home.space_city_loot">航天基地地图战利品</a>
+                        <a href="#" class="loot-link-item" data-i18n="home.valkyrie_loot">瓦尔基里地图战利品</a>
+                        <a href="#" class="loot-link-item" data-i18n="home.ouroboros_loot">衔尾蛇行动地图战利品</a>
                     </div>
                 </section>
 
@@ -888,37 +888,37 @@
                         <a href="https://www.playdeltaforce.com/act/officialwiki/en/#/weapon" target="_blank" rel="noopener noreferrer" class="wiki-category-link">
                             <div class="wiki-category">
                                 <div class="wiki-icon"><i class="fas fa-gun"></i></div>
-                                <div class="category-name" data-i18n="wiki.map_analysis">武器库</div>
+                                <div class="category-name" data-i18n="home.wiki_arsenal">武器库</div>
                             </div>
                         </a>
                         <a href="https://www.playdeltaforce.com/act/officialwiki/en/#/armor" target="_blank" rel="noopener noreferrer" class="wiki-category-link">
                             <div class="wiki-category">
                                 <div class="wiki-icon"><i class="fas fa-shield-halved"></i></div>
-                                <div class="category-name" data-i18n="wiki.weapon_guide">装备库</div>
+                                <div class="category-name" data-i18n="home.wiki_equipment">装备库</div>
                             </div>
                         </a>
                         <a href="https://www.playdeltaforce.com/act/officialwiki/en/#/item" target="_blank" rel="noopener noreferrer" class="wiki-category-link">
                             <div class="wiki-category">
                                 <div class="wiki-icon"><i class="fas fa-gem"></i></div>
-                                <div class="category-name" data-i18n="wiki.character_skills">收集品</div>
+                                <div class="category-name" data-i18n="home.wiki_collectibles">收集品</div>
                             </div>
                         </a>
                         <a href="https://www.playdeltaforce.com/act/officialwiki/en/#/swat" target="_blank" rel="noopener noreferrer" class="wiki-category-link">
                             <div class="wiki-category">
                                 <div class="wiki-icon"><i class="fas fa-id-badge"></i></div>
-                                <div class="category-name" data-i18n="wiki.achievement_guide">特勤局</div>
+                                <div class="category-name" data-i18n="home.wiki_bureau">特勤局</div>
                             </div>
                         </a>
                         <a href="https://www.playdeltaforce.com/act/officialwiki/en/#/operator" target="_blank" rel="noopener noreferrer" class="wiki-category-link">
                             <div class="wiki-category">
                                 <div class="wiki-icon"><i class="fas fa-users"></i></div>
-                                <div class="category-name" data-i18n="wiki.enemy_handbook">角色库</div>
+                                <div class="category-name" data-i18n="home.wiki_operators">角色库</div>
                             </div>
                         </a>
                         <a href="https://www.playdeltaforce.com/act/officialwiki/en/#/accessory" target="_blank" rel="noopener noreferrer" class="wiki-category-link">
                             <div class="wiki-category">
                                 <div class="wiki-icon"><i class="fas fa-puzzle-piece"></i></div>
-                                <div class="category-name" data-i18n="wiki.game_mechanics">配件库</div>
+                                <div class="category-name" data-i18n="home.wiki_attachments">配件库</div>
                             </div>
                         </a>
                     </div>
@@ -1059,6 +1059,16 @@
 
             const descriptionMeta = document.querySelector('meta[name="description"]');
             if(descriptionMeta) descriptionMeta.setAttribute('content', i18next.t('site_description'));
+            
+            const hotFeaturesTitle = document.querySelector('.card-title span[data-i18n="hot_features.title"]');
+            if(hotFeaturesTitle) {
+                const currentLang = i18next.language;
+                if (currentLang.startsWith('zh')) {
+                     hotFeaturesTitle.textContent = i18next.t('home.loot_links_title');
+                } else {
+                     hotFeaturesTitle.textContent = i18next.t('hot_features.title');
+                }
+            }
         }
 
         function changeLanguage(lang, event) {

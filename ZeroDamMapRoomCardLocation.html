@@ -490,9 +490,9 @@
         <img class="lightbox-content" id="lightbox-image">
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/i18next@23.5.1/dist/umd/i18next.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@7.1.0/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@2.2.2/dist/umd/i18nextHttpBackend.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/23.11.2/i18next.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-browser-languagedetector/7.2.0/i18nextBrowserLanguageDetector.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-http-backend/2.5.0/i18nextHttpBackend.min.js"></script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -519,8 +519,8 @@
 
             // i18next initialization
             i18next
-                .use(i18nextHttpBackend)
-                .use(i18nextBrowserLanguageDetector)
+                .use(window.i18nextHttpBackend)
+                .use(window.i18nextBrowserLanguageDetector)
                 .init({
                     fallbackLng: 'zh-CN',
                     debug: true,
