@@ -218,5 +218,28 @@
     "wiki_bureau": "Bureau",
     "wiki_operators": "Operators",
     "wiki_attachments": "Attachments"
+  },
+  "zeroDam": {
+    "seo_title": "Zero Dam Map Guide - Delta Force | DeltaForceMap.com",
+    "seo_description": "Master the Zero Dam map in Delta Force with our detailed guide. Discover key locations, strategies, recommended loadouts, and mission objectives.",
+    "seo_keywords": "delta force map, delta force zero dam, zero dam map guide, delta force strategy",
+    "og_title": "Zero Dam Map Guide - Delta Force | DeltaForceMap.com",
+    "og_description": "Master the Zero Dam map in Delta Force with our detailed guide, covering all key locations and strategies.",
+    "og_image_alt": "A strategic overview of the Zero Dam map in Delta Force.",
+    "twitter_title": "Zero Dam Map Guide - Delta Force | DeltaForceMap.com",
+    "twitter_description": "Master the Zero Dam map in Delta Force with our detailed guide, covering all key locations and strategies.",
+    "twitter_image_alt": "A strategic overview of the Zero Dam map in Delta Force.",
+    "banner_alt": "Zero Dam Map - Click to enlarge",
+    "page_title": "Zero Dam Map Password Door Location",
+    "location_title": "Detailed Location of Zero Dam Password Door",
+    "location_desc": "Go down through the manhole cover on the map.",
+    "related_locations_title": "Related Map Locations",
+    "related_room_card": "Zero Dam Map Keycard Locations",
+    "related_big_loot": "Zero Dam Map Large Valuables Locations",
+    "related_server": "Zero Dam Map Blade Server Locations",
+    "related_watch": "Zero Dam Map Luxury Watch Locations",
+    "related_shell": "Zero Dam Map Military Shell Locations",
+    "related_gold_bar": "Zero Dam Map Gold Bar Locations",
+    "related_africa_heart": "Zero Dam Map Heart of Africa Locations"
   }
 } 

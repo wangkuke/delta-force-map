@@ -218,5 +218,28 @@
     "wiki_bureau": "特勤局",
     "wiki_operators": "角色库",
     "wiki_attachments": "配件库"
+  },
+  "zeroDam": {
+    "seo_title": "零号大坝地图指南 - 三角洲行动攻略站",
+    "seo_description": "通过我们的详细指南，掌握三角洲行动中的零号大坝地图。发现关键位置、战术策略、推荐装备和任务目标。",
+    "seo_keywords": "三角洲行动地图, 三角洲行动零号大坝, 零号大坝地图指南, 三角洲行动攻略",
+    "og_title": "零号大坝地图指南 - 三角洲行动攻略站",
+    "og_description": "通过我们涵盖所有关键位置和策略的详细指南，掌握三角洲行动中的零号大坝地图。",
+    "og_image_alt": "三角洲行动零号大坝地图的战略概览。",
+    "twitter_title": "零号大坝地图指南 - 三角洲行动攻略站",
+    "twitter_description": "通过我们涵盖所有关键位置和策略的详细指南，掌握三角洲行动中的零号大坝地图。",
+    "twitter_image_alt": "三角洲行动零号大坝地图的战略概览。",
+    "banner_alt": "零号大坝地图 - 点击查看大图",
+    "page_title": "零号大坝地图密码门位置",
+    "location_title": "零号大坝密码门详细点位",
+    "location_desc": "从地图中的井盖下去即可",
+    "related_locations_title": "相关地图位置",
+    "related_room_card": "零号大坝地图房卡位置",
+    "related_big_loot": "零号大坝地图红色大战利品位置",
+    "related_server": "零号大坝地图刀片服务器位置",
+    "related_watch": "零号大坝地图名贵机械表位置",
+    "related_shell": "零号大坝地图军用炮弹位置",
+    "related_gold_bar": "零号大坝地图万足金条位置",
+    "related_africa_heart": "零号大坝地图非洲之心位置"
   }
 } 

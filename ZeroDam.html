@@ -4,27 +4,27 @@
     <meta charset="UTF-8">
 
     <!-- SEO: Primary Meta Tags -->
-    <title>Zero Dam Map Guide - Delta Force | DeltaForceMap.com</title>
-    <meta name="description" content="Master the Zero Dam map in Delta Force with our detailed guide. Discover key locations, strategies, recommended loadouts, and mission objectives.">
-    <meta name="keywords" content="delta force map, delta force zero dam, zero dam map guide, delta force strategy">
+    <title data-i18n="zeroDam.seo_title">Zero Dam Map Guide - Delta Force | DeltaForceMap.com</title>
+    <meta name="description" content="Master the Zero Dam map in Delta Force with our detailed guide. Discover key locations, strategies, recommended loadouts, and mission objectives." data-i18n="[content]zeroDam.seo_description">
+    <meta name="keywords" content="delta force map, delta force zero dam, zero dam map guide, delta force strategy" data-i18n="[content]zeroDam.seo_keywords">
     <link rel="canonical" href="https://www.deltaforcemap.com/ZeroDam.html">
 
     <!-- SEO: Open Graph / Facebook / Discord -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.deltaforcemap.com/ZeroDam.html">
-    <meta property="og:title" content="Zero Dam Map Guide - Delta Force | DeltaForceMap.com">
-    <meta property="og:description" content="Master the Zero Dam map in Delta Force with our detailed guide, covering all key locations and strategies.">
+    <meta property="og:title" content="Zero Dam Map Guide - Delta Force | DeltaForceMap.com" data-i18n="[content]zeroDam.og_title">
+    <meta property="og:description" content="Master the Zero Dam map in Delta Force with our detailed guide, covering all key locations and strategies." data-i18n="[content]zeroDam.og_description">
     <meta property="og:site_name" content="DeltaForceMap.com">
     <meta property="og:image" content="https://www.deltaforcemap.com/零号大坝密码门.png">
-    <meta property="og:image:alt" content="A strategic overview of the Zero Dam map in Delta Force.">
+    <meta property="og:image:alt" content="A strategic overview of the Zero Dam map in Delta Force." data-i18n="[content]zeroDam.og_image_alt">
 
     <!-- SEO: Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://www.deltaforcemap.com/ZeroDam.html">
-    <meta name="twitter:title" content="Zero Dam Map Guide - Delta Force | DeltaForceMap.com">
-    <meta name="twitter:description" content="Master the Zero Dam map in Delta Force with our detailed guide, covering all key locations and strategies.">
+    <meta name="twitter:title" content="Zero Dam Map Guide - Delta Force | DeltaForceMap.com" data-i18n="[content]zeroDam.twitter_title">
+    <meta name="twitter:description" content="Master the Zero Dam map in Delta Force with our detailed guide, covering all key locations and strategies." data-i18n="[content]zeroDam.twitter_description">
     <meta name="twitter:image" content="https://www.deltaforcemap.com/零号大坝密码门.png">
-    <meta name="twitter:image:alt" content="A strategic overview of the Zero Dam map in Delta Force.">
+    <meta name="twitter:image:alt" content="A strategic overview of the Zero Dam map in Delta Force." data-i18n="[content]zeroDam.twitter_image_alt">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -779,6 +779,53 @@
             color: #bbb;
             text-decoration: none;
         }
+
+        .language-switcher {
+            position: relative;
+            display: inline-block;
+        }
+
+        .language-switcher button {
+            background-color: var(--accent);
+            color: white;
+            padding: 8px 12px;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .language-switcher button:hover {
+            background-color: var(--accent-light);
+        }
+
+        .language-switcher .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 120px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1001;
+            border-radius: 5px;
+            overflow: hidden;
+            right: 0;
+        }
+
+        .language-switcher .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 1rem;
+        }
+
+        .language-switcher .dropdown-content a:hover {
+            background-color: #f1f1f1;
+            color: var(--accent);
+        }
     </style>
 </head>
 <body>
@@ -787,18 +834,25 @@
         <div class="header-content">
             <div class="logo">
                 <i class="fas fa-crosshairs"></i>
-                <h1>三角洲行动<span>攻略站</span></h1>
+                <h1><span data-i18n="header.title">三角洲行动</span><span data-i18n="header.subtitle">攻略站</span></h1>
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">首页</a></li>
-                    <li><a href="#" class="active">地图攻略</a></li>
-                    <li><a href="#">武器库</a></li>
-                    <li><a href="#">任务系统</a></li>
-                    <li><a href="#">玩家社区</a></li>
-                    <li><a href="#">更新日志</a></li>
+                    <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+                    <li><a href="#" class="active" data-i18n="nav.map_guides">地图攻略</a></li>
+                    <li><a href="#" data-i18n="nav.arsenal">武器库</a></li>
+                    <li><a href="#" data-i18n="nav.task_system">任务系统</a></li>
+                    <li><a href="#" data-i18n="nav.community">玩家社区</a></li>
+                    <li><a href="#" data-i18n="nav.changelog">更新日志</a></li>
                 </ul>
             </nav>
+            <div class="language-switcher">
+                <button id="lang-switcher-btn"><i class="fas fa-globe"></i> <span id="current-lang">Language</span></button>
+                <div class="dropdown-content" id="lang-dropdown">
+                    <a href="#" data-lang="zh-CN">简体中文</a>
+                    <a href="#" data-lang="en">English</a>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -807,10 +861,10 @@
         <div class="map-banner">
             <!-- 实际项目中替换为真实游戏截图 -->
             <a href="零号大坝密码门.png" id="map-link">
-                <img src="零号大坝密码门.png" alt="零号大坝地图 - 点击查看大图">
+                <img src="零号大坝密码门.png" alt="零号大坝地图 - 点击查看大图" data-i18n="[alt]zeroDam.banner_alt">
             </a>
             <div class="map-banner-content">
-                <h1 class="map-title">零号大坝地图密码门位置</h1>
+                <h1 class="map-title" data-i18n="zeroDam.page_title">零号大坝地图密码门位置</h1>
             </div>
         </div>
     </div>
@@ -822,48 +876,48 @@
                 <!-- Key Locations -->
                 <section class="card">
                     <div class="card-header">
-                        <h2 class="card-title"><i class="fas fa-map-pin"></i>零号大坝密码门详细点位</h2>
+                        <h2 class="card-title"><i class="fas fa-map-pin"></i><span data-i18n="zeroDam.location_title">零号大坝密码门详细点位</span></h2>
                     </div>
                     <div class="location-detail-view">
                         <div class="location-main-image">
                             <img src="dabadianwei.jpg" alt="大坝详细点位">
                         </div>
                         <div class="location-entry-info">
-                            <p class="entry-desc">从地图中的井盖下去即可</p>
+                            <p class="entry-desc" data-i18n="zeroDam.location_desc">从地图中的井盖下去即可</p>
                         </div>
                     </div>
                 </section>
                 
                 <!-- Related Locations Card -->
                 <div class="card">
-                    <h2 class="sidebar-title" style="padding-bottom: 15px; border-bottom: 2px solid rgba(231, 76, 60, 0.3); margin-bottom: 20px;"><i class="fas fa-map-signs"></i> 相关地图位置</h2>
+                    <h2 class="sidebar-title" style="padding-bottom: 15px; border-bottom: 2px solid rgba(231, 76, 60, 0.3); margin-bottom: 20px;"><i class="fas fa-map-signs"></i> <span data-i18n="zeroDam.related_locations_title">相关地图位置</span></h2>
                     <ul class="trending-list">
                         <li class="trending-item" onclick="window.location='ZeroDamMapRoomCardLocation.html';">
-                            <div class="trending-name">零号大坝地图房卡位置</div>
+                            <div class="trending-name" data-i18n="zeroDam.related_room_card">零号大坝地图房卡位置</div>
                             <div class="trending-value"><i class="fas fa-chevron-right"></i></div>
                         </li>
                         <li class="trending-item">
-                            <div class="trending-name">零号大坝地图红色大战利品位置</div>  
+                            <div class="trending-name" data-i18n="zeroDam.related_big_loot">零号大坝地图红色大战利品位置</div>  
                             <div class="trending-value"><i class="fas fa-chevron-right"></i></div>
                         </li>
                         <li class="trending-item">
-                            <div class="trending-name">零号大坝地图刀片服务器位置   </div>
+                            <div class="trending-name" data-i18n="zeroDam.related_server">零号大坝地图刀片服务器位置   </div>
                             <div class="trending-value"><i class="fas fa-chevron-right"></i></div>
                         </li>
                         <li class="trending-item">
-                            <div class="trending-name">零号大坝地图名贵机械表位置</div>
+                            <div class="trending-name" data-i18n="zeroDam.related_watch">零号大坝地图名贵机械表位置</div>
                             <div class="trending-value"><i class="fas fa-chevron-right"></i></div>
                         </li>
                         <li class="trending-item">
-                            <div class="trending-name">零号大坝地图军用炮弹位置 </div>
+                            <div class="trending-name" data-i18n="zeroDam.related_shell">零号大坝地图军用炮弹位置 </div>
                             <div class="trending-value"><i class="fas fa-chevron-right"></i></div>
                         </li>
                         <li class="trending-item">
-                            <div class="trending-name">零号大坝地图万足金条位置</div>
+                            <div class="trending-name" data-i18n="zeroDam.related_gold_bar">零号大坝地图万足金条位置</div>
                             <div class="trending-value"><i class="fas fa-chevron-right"></i></div>
                         </li>
                         <li class="trending-item">
-                            <div class="trending-name">零号大坝地图非洲之心位置</div>
+                            <div class="trending-name" data-i18n="zeroDam.related_africa_heart">零号大坝地图非洲之心位置</div>
                             <div class="trending-value"><i class="fas fa-chevron-right"></i></div>
                         </li>
                     </ul>
@@ -876,32 +930,32 @@
     <footer>
         <div class="footer-content">
             <div class="footer-about">
-                <div class="footer-logo">三角洲行动攻略站</div>
-                <p>提供最新、最专业的三角洲行动游戏攻略、地图解析、武器评测和任务指南。助力玩家提升游戏体验，成为战场精英。</p>
-                <p>本站为非官方攻略站，与游戏开发商无关联。</p>
+                <div class="footer-logo" data-i18n="footer.logo">三角洲行动攻略站</div>
+                <p data-i18n="footer.about1">提供最新、最专业的三角洲行动游戏攻略、地图解析、武器评测和任务指南。助力玩家提升游戏体验，成为战场精英。</p>
+                <p data-i18n="footer.about2">本站为非官方攻略站，与游戏开发商无关联。</p>
             </div>
             <div class="footer-links">
-                <h3>快速链接</h3>
+                <h3 data-i18n="footer.quick_links">快速链接</h3>
                 <ul>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> 首页</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> 地图攻略</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> 武器数据库</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> 任务指南</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> 游戏更新</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> <span data-i18n="nav.home">首页</span></a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> <span data-i18n="nav.map_guides">地图攻略</span></a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> <span data-i18n="nav.arsenal">武器数据库</span></a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> <span data-i18n="nav.task_system">任务指南</span></a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> <span data-i18n="nav.changelog">游戏更新</span></a></li>
                 </ul>
             </div>
             <div class="footer-links">
-                <h3>资源中心</h3>
+                <h3 data-i18n="footer.resource_center">资源中心</h3>
                 <ul>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> 下载中心</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> 视频攻略</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> 玩家论坛</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> 常见问题</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> 联系我们</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> <span data-i18n="footer.downloads">下载中心</span></a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> <span data-i18n="footer.video_guides">视频攻略</span></a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> <span data-i18n="footer.forums">玩家论坛</span></a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> <span data-i18n="footer.faq">常见问题</span></a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> <span data-i18n="footer.contact_us">联系我们</span></a></li>
                 </ul>
             </div>
         </div>
-        <div class="copyright">
+        <div class="copyright" data-i18n="footer.copyright">
             &copy; 2023 三角洲行动攻略站 | 本网站仅用于游戏攻略交流，所有游戏内容版权归其开发商所有
         </div>
     </footer>
@@ -912,6 +966,9 @@
       <img class="modal-content" id="modalImage">
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/23.11.2/i18next.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-browser-languagedetector/7.2.0/i18nextBrowserLanguageDetector.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-http-backend/2.5.0/i18nextHttpBackend.min.js"></script>
     <script>
     document.addEventListener('DOMContentLoaded', () => {
         // Strategy Tabs Logic
@@ -958,6 +1015,87 @@
                     close();
                 }
             }
+        }
+
+        // i18next initialization
+        i18next
+            .use(window.i18nextHttpBackend)
+            .use(window.i18nextBrowserLanguageDetector)
+            .init({
+                fallbackLng: 'zh-CN',
+                debug: true,
+                backend: {
+                    loadPath: '/locales/{{lng}}/{{ns}}.json'
+                },
+                detection: {
+                    order: ['querystring', 'cookie', 'localStorage', 'sessionStorage', 'navigator', 'htmlTag'],
+                    caches: ['cookie', 'localStorage']
+                }
+            }, (err, t) => {
+                if (err) return console.error(err);
+                updateContent();
+            });
+
+        function updateContent() {
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (key.startsWith('[') && key.includes(']')) {
+                    const attr = key.match(/\[(.*?)\]/)[1];
+                    const realKey = key.substring(key.indexOf(']') + 1);
+                    el.setAttribute(attr, i18next.t(realKey));
+                } else {
+                    const icon = el.querySelector('i.fas');
+                    const text = i18next.t(key);
+                    if (icon) {
+                        el.innerHTML = icon.outerHTML + ' ' + text;
+                    } else {
+                        el.innerHTML = text;
+                    }
+                }
+            });
+            updateLangSwitcher();
+        }
+
+        function updateLangSwitcher() {
+            const currentLang = i18next.language;
+            const langBtn = document.getElementById('current-lang');
+            if (langBtn) {
+                if (currentLang.includes('zh')) {
+                    langBtn.textContent = '简体中文';
+                } else {
+                    langBtn.textContent = 'English';
+                }
+            }
+        }
+
+        // Language switcher logic
+        const langSwitcherBtn = document.getElementById('lang-switcher-btn');
+        const langDropdown = document.getElementById('lang-dropdown');
+        if (langSwitcherBtn && langDropdown) {
+            langSwitcherBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                langDropdown.style.display = langDropdown.style.display === 'block' ? 'none' : 'block';
+            });
+
+            document.addEventListener('click', () => {
+                langDropdown.style.display = 'none';
+            });
+
+            langDropdown.addEventListener('click', (e) => {
+                e.stopPropagation();
+            });
+
+            document.querySelectorAll('#lang-dropdown a').forEach(el => {
+                el.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const lang = el.getAttribute('data-lang');
+                    i18next.changeLanguage(lang, (err, t) => {
+                        if (err) return console.error(err);
+                        updateContent();
+                        langDropdown.style.display = 'none';
+                    });
+                });
+            });
         }
     });
     </script>
