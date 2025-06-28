@@ -339,42 +339,27 @@
         }
         
         /* Hot Features Section */
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-            gap: 15px;
+        .loot-links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
             margin-top: 15px;
         }
         
-        .feature-card {
-            background: rgba(30, 50, 80, 0.6);
-            border-radius: 10px;
-            padding: 20px 15px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
-            cursor: pointer;
+        .loot-link-item {
+            color: var(--light);
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 12px 15px;
+            border-radius: 8px;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+            border: 1px solid transparent;
         }
-        
-        .feature-card:hover {
-            background: rgba(40, 65, 100, 0.7);
-            transform: translateY(-3px);
+
+        .loot-link-item:hover {
+            background-color: rgba(40, 65, 100, 0.7);
+            color: var(--accent-light);
             border-color: var(--info);
-        }
-        
-        .feature-icon {
-            font-size: 2.2rem;
-            color: var(--info);
-            margin-bottom: 12px;
-        }
-        
-        .feature-name {
-            font-size: 0.95rem;
-            font-weight: 500;
         }
         
         /* Guide Column */
@@ -470,6 +455,11 @@
             background: rgba(40, 65, 100, 0.7);
             transform: translateY(-3px);
             border-color: var(--warning);
+        }
+        
+        .wiki-category-link {
+            text-decoration: none;
+            color: inherit;
         }
         
         .wiki-icon {
@@ -846,41 +836,15 @@
                 <!-- Hot Features -->
                 <section class="card">
                     <div class="card-header">
-                        <h2 class="card-title"><i class="fas fa-fire"></i> <span data-i18n="hot_features.title">热门功能</span></h2>
+                        <h2 class="card-title"><i class="fas fa-fire"></i> <span data-i18n="hot_features.title">地图战利品</span></h2>
                     </div>
-                    <div class="features-grid">
-                        <div class="feature-card">
-                            <div class="feature-icon"><i class="fas fa-calculator"></i></div>
-                            <div class="feature-name" data-i18n="hot_features.simulator">模拟开箱</div>
-                        </div>
-                        <div class="feature-card">
-                            <div class="feature-icon"><i class="fas fa-shopping-cart"></i></div>
-                            <div class="feature-name" data-i18n="hot_features.buy_recommend">战备推荐</div>
-                        </div>
-                        <div class="feature-card">
-                            <div class="feature-icon"><i class="fas fa-cloud"></i></div>
-                            <div class="feature-name" data-i18n="hot_features.cloud_storage">改枪方案</div>
-                        </div>
-                        <div class="feature-card">
-                            <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
-                            <div class="feature-name" data-i18n="hot_features.loadout">底价钥匙</div>
-                        </div>
-                        <div class="feature-card">
-                            <div class="feature-icon"><i class="fas fa-mouse"></i></div>
-                            <div class="feature-name" data-i18n="hot_features.mouse_unboxing">鼠标开箱</div>
-                        </div>
-                        <div class="feature-card">
-                            <div class="feature-icon"><i class="fas fa-key"></i></div>
-                            <div class="feature-name" data-i18n="hot_features.key_bullet_price">子弹自选包</div>
-                        </div>
-                        <div class="feature-card">
-                            <div class="feature-icon"><i class="fas fa-exchange-alt"></i></div>
-                            <div class="feature-name" data-i18n="hot_features.bullet_exchange">子弹兑换收益</div>
-                        </div>
-                        <div class="feature-card">
-                            <div class="feature-icon"><i class="fas fa-star"></i></div>
-                            <div class="feature-name" data-i18n="hot_features.loadout_recommend">战备推荐</div>
-                        </div>
+                    <div class="loot-links-container">
+                        <a href="ZeroDamMapLoot.html" class="loot-link-item">零号大坝地图战利品</a>
+                        <a href="LayaliGroveMapLoot.html" class="loot-link-item">长弓溪谷地图战利品</a>
+                        <a href="#" class="loot-link-item">巴克什地图战利品</a>
+                        <a href="#" class="loot-link-item">航天基地地图战利品</a>
+                        <a href="#" class="loot-link-item">瓦尔基里地图战利品</a>
+                        <a href="#" class="loot-link-item">衔尾蛇行动地图战利品</a>
                     </div>
                 </section>
 
@@ -921,30 +885,42 @@
                         <h2 class="card-title"><i class="fas fa-book"></i> <span data-i18n="wiki.title">百科攻略</span></h2>
                     </div>
                     <div class="wiki-categories">
-                        <div class="wiki-category">
-                            <div class="wiki-icon"><i class="fas fa-map"></i></div>
-                            <div class="category-name" data-i18n="wiki.map_analysis">地图解析</div>
-                        </div>
-                        <div class="wiki-category">
-                            <div class="wiki-icon"><i class="fas fa-gun"></i></div>
-                            <div class="category-name" data-i18n="wiki.weapon_guide">武器指南</div>
-                        </div>
-                        <div class="wiki-category">
-                            <div class="wiki-icon"><i class="fas fa-user-secret"></i></div>
-                            <div class="category-name" data-i18n="wiki.character_skills">角色技能</div>
-                        </div>
-                        <div class="wiki-category">
-                            <div class="wiki-icon"><i class="fas fa-trophy"></i></div>
-                            <div class="category-name" data-i18n="wiki.achievement_guide">成就攻略</div>
-                        </div>
-                        <div class="wiki-category">
-                            <div class="wiki-icon"><i class="fas fa-robot"></i></div>
-                            <div class="category-name" data-i18n="wiki.enemy_handbook">敌人图鉴</div>
-                        </div>
-                        <div class="wiki-category">
-                            <div class="wiki-icon"><i class="fas fa-cogs"></i></div>
-                            <div class="category-name" data-i18n="wiki.game_mechanics">游戏机制</div>
-                        </div>
+                        <a href="https://www.playdeltaforce.com/act/officialwiki/en/#/weapon" target="_blank" rel="noopener noreferrer" class="wiki-category-link">
+                            <div class="wiki-category">
+                                <div class="wiki-icon"><i class="fas fa-gun"></i></div>
+                                <div class="category-name" data-i18n="wiki.map_analysis">武器库</div>
+                            </div>
+                        </a>
+                        <a href="https://www.playdeltaforce.com/act/officialwiki/en/#/armor" target="_blank" rel="noopener noreferrer" class="wiki-category-link">
+                            <div class="wiki-category">
+                                <div class="wiki-icon"><i class="fas fa-shield-halved"></i></div>
+                                <div class="category-name" data-i18n="wiki.weapon_guide">装备库</div>
+                            </div>
+                        </a>
+                        <a href="https://www.playdeltaforce.com/act/officialwiki/en/#/item" target="_blank" rel="noopener noreferrer" class="wiki-category-link">
+                            <div class="wiki-category">
+                                <div class="wiki-icon"><i class="fas fa-gem"></i></div>
+                                <div class="category-name" data-i18n="wiki.character_skills">收集品</div>
+                            </div>
+                        </a>
+                        <a href="https://www.playdeltaforce.com/act/officialwiki/en/#/swat" target="_blank" rel="noopener noreferrer" class="wiki-category-link">
+                            <div class="wiki-category">
+                                <div class="wiki-icon"><i class="fas fa-id-badge"></i></div>
+                                <div class="category-name" data-i18n="wiki.achievement_guide">特勤局</div>
+                            </div>
+                        </a>
+                        <a href="https://www.playdeltaforce.com/act/officialwiki/en/#/operator" target="_blank" rel="noopener noreferrer" class="wiki-category-link">
+                            <div class="wiki-category">
+                                <div class="wiki-icon"><i class="fas fa-users"></i></div>
+                                <div class="category-name" data-i18n="wiki.enemy_handbook">角色库</div>
+                            </div>
+                        </a>
+                        <a href="https://www.playdeltaforce.com/act/officialwiki/en/#/accessory" target="_blank" rel="noopener noreferrer" class="wiki-category-link">
+                            <div class="wiki-category">
+                                <div class="wiki-icon"><i class="fas fa-puzzle-piece"></i></div>
+                                <div class="category-name" data-i18n="wiki.game_mechanics">配件库</div>
+                            </div>
+                        </a>
                     </div>
                 </section>
             </div>
