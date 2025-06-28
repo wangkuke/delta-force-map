@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- SEO: Primary Meta Tags -->
+    <title>零号大坝地图房卡位置 - 三角洲行动攻略站</title>
+    <meta name="description" content="查看三角洲行动中零号大坝地图所有房卡的刷新位置。详细攻略，包括需要前置钥匙的地点。">
+    <meta name="keywords" content="三角洲行动, 零号大坝, 房卡, 钥匙卡, 地图攻略, 水泥厂办公室, 变电站宿舍, 变电站技术室">
+    <link rel="canonical" href="https://www.deltaforcemap.com/ZeroDamMapLoot.html">
+
+    <!-- SEO: Open Graph / Facebook / Discord -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.deltaforcemap.com/ZeroDamMapLoot.html">
+    <meta property="og:title" content="零号大坝地图房卡位置 - 三角洲行动攻略站">
+    <meta property="og:description" content="查看三角洲行动中零号大坝地图所有房卡的刷新位置。">
+    <meta property="og:site_name" content="DeltaForceMap.com">
+    <meta property="og:image" content="https://www.deltaforcemap.com/零号大坝密码门.png">
+    <meta property="og:image:alt" content="零号大坝地图的战术视图">
+
+    <!-- SEO: Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.deltaforcemap.com/ZeroDamMapLoot.html">
+    <meta name="twitter:title" content="零号大坝地图房卡位置 - 三角洲行动攻略站">
+    <meta name="twitter:description" content="查看三角洲行动中零号大坝地图所有房卡的刷新位置。">
+    <meta name="twitter:image" content="https://www.deltaforcemap.com/零号大坝密码门.png">
+    <meta name="twitter:image:alt" content="零号大坝地图的战术视图">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a2a4a;
+            --secondary: #2c3e50;
+            --accent: #e74c3c;
+            --accent-light: #ff6b6b;
+            --light: #ecf0f1;
+            --dark: #121a26;
+            --success: #2ecc71;
+            --warning: #f39c12;
+            --info: #3498db;
+            --map-bg: #0d1522;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: var(--map-bg);
+            color: var(--light);
+            line-height: 1.6;
+            min-height: 100vh;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(25, 40, 65, 0.15) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(231, 76, 60, 0.1) 0%, transparent 20%);
+            background-attachment: fixed;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: rgba(10, 20, 35, 0.85);
+            backdrop-filter: blur(10px);
+            padding: 15px 0;
+            border-bottom: 2px solid var(--accent);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo i {
+            color: var(--accent);
+            font-size: 2.5rem;
+        }
+        
+        .logo h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.2rem;
+            background: linear-gradient(to right, var(--accent-light), var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .logo span {
+            color: var(--light);
+            font-weight: 300;
+            font-size: 1.1rem;
+            margin-left: 5px;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        
+        nav a {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        nav a:hover {
+            color: var(--accent-light);
+        }
+        
+        .map-banner {
+            height: 450px;
+            border-radius: 12px;
+            overflow: hidden;
+            margin: 25px 0;
+            position: relative;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+        }
+        
+        .map-banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .map-banner-content {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 50%, rgba(0,0,0,0.6) 100%);
+            pointer-events: none;
+        }
+
+        .map-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 3.5rem;
+            color: white;
+            text-shadow: 0 0 15px rgba(231, 76, 60, 0.7);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .card {
+            background: rgba(25, 40, 65, 0.7);
+            border-radius: 12px;
+            padding: 25px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            margin-bottom: 25px;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid rgba(231, 76, 60, 0.3);
+        }
+        
+        .card-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.6rem;
+            color: var(--accent-light);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .card-title i {
+            color: var(--accent);
+        }
+
+        .location-list {
+            list-style: none;
+            counter-reset: location-counter;
+        }
+        
+        .location-list li {
+            padding: 20px 0 20px 45px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+            font-size: 1.1rem;
+        }
+        
+        .location-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .location-list li::before {
+            counter-increment: location-counter;
+            content: counter(location-counter, upper-alpha);
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 30px;
+            height: 30px;
+            background: var(--accent);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: bold;
+        }
+        
+        footer {
+            background: rgba(10, 20, 35, 0.85);
+            margin-top: 50px;
+            padding: 30px 0;
+            border-top: 2px solid var(--accent);
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .footer-logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.8rem;
+            color: var(--accent-light);
+            margin-bottom: 15px;
+        }
+        
+        .footer-about p {
+            color: #bdc3c7;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+        
+        .footer-links h3 {
+            color: var(--light);
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a {
+            color: #bdc3c7;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent-light);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 30px;
+        }
+
+        /* Lightbox styles */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 1001;
+            padding-top: 60px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.9);
+        }
+
+        .lightbox-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 1200px;
+        }
+
+        .close-lightbox {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close-lightbox:hover,
+        .close-lightbox:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-crosshairs"></i>
+                <h1>三角洲行动<span>攻略站</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="#" class="active">地图攻略</a></li>
+                    <li><a href="#">武器库</a></li>
+                    <li><a href="#">任务系统</a></li>
+                    <li><a href="#">玩家社区</a></li>
+                    <li><a href="#">更新日志</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Map Banner -->
+    <div class="container">
+        <div class="map-banner">
+            <img src="src/零号大坝房卡刷新点.png" alt="零号大坝地图房卡刷新点">
+            <div class="map-banner-content">
+                <h1 class="map-title">零号大坝地图房卡位置</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <section class="card">
+            <div class="card-header">
+                <h2 class="card-title"><img src="src/fangka.png" alt="房卡图标" style="height: 2.2rem;"> 零号大坝地图房卡位置</h2>
+            </div>
+            <ol class="location-list">
+                <li>大坝内部桌子上可能刷新</li>
+                <li>军营桌子上可能刷新</li>
+                <li>水泥厂进门铁车上刷新（需要水泥厂办公室房卡）</li>
+                <li>小变电站桌子上可能刷新（需要变电站宿舍房卡）</li>
+                <li>大变电站桌子上可能刷新（需要变电站技术室房卡）</li>
+                <li>游客中心二楼右手边房间桌子可能刷新</li>
+                <li>行政楼1.一楼书房 2.东楼密室的桌子 3. 2F密室拐角桌子</li>
+            </ol>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <div class="footer-logo">三角洲行动攻略站</div>
+                <p>提供最新、最专业的三角洲行动游戏攻略、地图解析、武器评测和任务指南。助力玩家提升游戏体验，成为战场精英。</p>
+                <p>本站为非官方攻略站，与游戏开发商无关联。</p>
+            </div>
+            <div class="footer-links">
+                <h3>快速链接</h3>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> 首页</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> 地图攻略</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> 武器数据库</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> 任务指南</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> 游戏更新</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>资源中心</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> 下载中心</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> 视频攻略</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> 玩家论坛</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> 常见问题</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> 联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2023 三角洲行动攻略站 | 本网站仅用于游戏攻略交流，所有游戏内容版权归其开发商所有
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-image">
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mapBanner = document.querySelector('.map-banner');
+            const modal = document.getElementById('lightbox-modal');
+            const modalImg = document.getElementById('lightbox-image');
+            const bannerImg = mapBanner.querySelector('img');
+            const closeBtn = document.querySelector('.close-lightbox');
+
+            mapBanner.addEventListener('click', function() {
+                modal.style.display = "block";
+                modalImg.src = bannerImg.src;
+            });
+
+            closeBtn.addEventListener('click', function() {
+                modal.style.display = "none";
+            });
+
+            window.addEventListener('click', function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            });
+        });
+    </script>
+</body>
+</html> 
