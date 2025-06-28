@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
 
     <!-- SEO: Primary Meta Tags -->
-    <title>零号大坝地图房卡位置 - 三角洲行动攻略站</title>
-    <meta name="description" content="查看三角洲行动中零号大坝地图所有房卡的刷新位置。详细攻略，包括需要前置钥匙的地点。">
+    <title data-i18n="zeroDamRoomCard.seo_title">零号大坝地图房卡位置 - 三角洲行动攻略站</title>
+    <meta name="description" content="查看三角洲行动中零号大坝地图所有房卡的刷新位置。详细攻略，包括需要前置钥匙的地点。" data-i18n="[content]zeroDamRoomCard.seo_description">
     <meta name="keywords" content="三角洲行动, 零号大坝, 房卡, 钥匙卡, 地图攻略, 水泥厂办公室, 变电站宿舍, 变电站技术室">
     <link rel="canonical" href="https://www.deltaforcemap.com/ZeroDamMapLoot.html">
 
     <!-- SEO: Open Graph / Facebook / Discord -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.deltaforcemap.com/ZeroDamMapLoot.html">
-    <meta property="og:title" content="零号大坝地图房卡位置 - 三角洲行动攻略站">
-    <meta property="og:description" content="查看三角洲行动中零号大坝地图所有房卡的刷新位置。">
+    <meta property="og:title" content="零号大坝地图房卡位置 - 三角洲行动攻略站" data-i18n="[content]zeroDamRoomCard.og_title">
+    <meta property="og:description" content="查看三角洲行动中零号大坝地图所有房卡的刷新位置。" data-i18n="[content]zeroDamRoomCard.og_description">
     <meta property="og:site_name" content="DeltaForceMap.com">
     <meta property="og:image" content="https://www.deltaforcemap.com/零号大坝密码门.png">
     <meta property="og:image:alt" content="零号大坝地图的战术视图">
@@ -21,8 +21,8 @@
     <!-- SEO: Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://www.deltaforcemap.com/ZeroDamMapLoot.html">
-    <meta name="twitter:title" content="零号大坝地图房卡位置 - 三角洲行动攻略站">
-    <meta name="twitter:description" content="查看三角洲行动中零号大坝地图所有房卡的刷新位置。">
+    <meta name="twitter:title" content="零号大坝地图房卡位置 - 三角洲行动攻略站" data-i18n="[content]zeroDamRoomCard.twitter_title">
+    <meta name="twitter:description" content="查看三角洲行动中零号大坝地图所有房卡的刷新位置。" data-i18n="[content]zeroDamRoomCard.twitter_description">
     <meta name="twitter:image" content="https://www.deltaforcemap.com/零号大坝密码门.png">
     <meta name="twitter:image:alt" content="零号大坝地图的战术视图">
 
@@ -346,6 +346,52 @@
             text-decoration: none;
             cursor: pointer;
         }
+
+        .language-switcher {
+            position: relative;
+            display: inline-block;
+        }
+
+        .language-switcher button {
+            background-color: var(--accent);
+            color: white;
+            padding: 8px 12px;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .language-switcher button:hover {
+            background-color: var(--accent-light);
+        }
+
+        .language-switcher .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 120px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .language-switcher .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 1rem;
+        }
+
+        .language-switcher .dropdown-content a:hover {
+            background-color: #f1f1f1;
+            color: var(--accent);
+        }
     </style>
 </head>
 <body>
@@ -354,27 +400,34 @@
         <div class="header-content">
             <div class="logo">
                 <i class="fas fa-crosshairs"></i>
-                <h1>三角洲行动<span>攻略站</span></h1>
+                <h1><span data-i18n="header.title">三角洲行动</span><span data-i18n="header.subtitle">攻略站</span></h1>
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">首页</a></li>
-                    <li><a href="#" class="active">地图攻略</a></li>
-                    <li><a href="#">武器库</a></li>
-                    <li><a href="#">任务系统</a></li>
-                    <li><a href="#">玩家社区</a></li>
-                    <li><a href="#">更新日志</a></li>
+                    <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+                    <li><a href="#" class="active" data-i18n="nav.map_guides">地图攻略</a></li>
+                    <li><a href="#" data-i18n="nav.arsenal">武器库</a></li>
+                    <li><a href="#" data-i18n="nav.task_system">任务系统</a></li>
+                    <li><a href="#" data-i18n="nav.community">玩家社区</a></li>
+                    <li><a href="#" data-i18n="nav.changelog">更新日志</a></li>
                 </ul>
             </nav>
+            <div class="language-switcher">
+                <button id="lang-switcher-btn"><i class="fas fa-globe"></i> <span id="current-lang">Language</span></button>
+                <div class="dropdown-content" id="lang-dropdown">
+                    <a href="#" data-lang="zh-CN">简体中文</a>
+                    <a href="#" data-lang="en">English</a>
+                </div>
+            </div>
         </div>
     </header>
 
     <!-- Map Banner -->
     <div class="container">
         <div class="map-banner">
-            <img src="src/零号大坝房卡刷新点.png" alt="零号大坝地图房卡刷新点">
+            <img src="src/零号大坝房卡刷新点.png" alt="零号大坝地图房卡刷新点" data-i18n="[alt]zeroDamRoomCard.banner_alt">
             <div class="map-banner-content">
-                <h1 class="map-title">零号大坝地图房卡位置</h1>
+                <h1 class="map-title" data-i18n="zeroDamRoomCard.page_title">零号大坝地图房卡位置</h1>
             </div>
         </div>
     </div>
@@ -383,16 +436,16 @@
     <div class="container">
         <section class="card">
             <div class="card-header">
-                <h2 class="card-title"><img src="src/fangka.png" alt="房卡图标" style="height: 2.2rem;"> 零号大坝地图房卡位置</h2>
+                <h2 class="card-title"><img src="src/fangka.png" alt="房卡图标" style="height: 2.2rem;" data-i18n="[alt]zeroDamRoomCard.card_icon_alt"> <span data-i18n="zeroDamRoomCard.card_title">零号大坝地图房卡位置</span></h2>
             </div>
             <ol class="location-list">
-                <li>大坝内部桌子上可能刷新</li>
-                <li>军营桌子上可能刷新</li>
-                <li>水泥厂进门铁车上刷新（需要水泥厂办公室房卡）</li>
-                <li>小变电站桌子上可能刷新（需要变电站宿舍房卡）</li>
-                <li>大变电站桌子上可能刷新（需要变电站技术室房卡）</li>
-                <li>游客中心二楼右手边房间桌子可能刷新</li>
-                <li>行政楼1.一楼书房 2.东楼密室的桌子 3. 2F密室拐角桌子</li>
+                <li data-i18n="zeroDamRoomCard.location1">大坝内部桌子上可能刷新</li>
+                <li data-i18n="zeroDamRoomCard.location2">军营桌子上可能刷新</li>
+                <li data-i18n="zeroDamRoomCard.location3">水泥厂进门铁车上刷新（需要水泥厂办公室房卡）</li>
+                <li data-i18n="zeroDamRoomCard.location4">小变电站桌子上可能刷新（需要变电站宿舍房卡）</li>
+                <li data-i18n="zeroDamRoomCard.location5">大变电站桌子上可能刷新（需要变电站技术室房卡）</li>
+                <li data-i18n="zeroDamRoomCard.location6">游客中心二楼右手边房间桌子可能刷新</li>
+                <li data-i18n="zeroDamRoomCard.location7">行政楼1.一楼书房 2.东楼密室的桌子 3. 2F密室拐角桌子</li>
             </ol>
         </section>
     </div>
@@ -401,32 +454,32 @@
     <footer>
         <div class="footer-content">
             <div class="footer-about">
-                <div class="footer-logo">三角洲行动攻略站</div>
-                <p>提供最新、最专业的三角洲行动游戏攻略、地图解析、武器评测和任务指南。助力玩家提升游戏体验，成为战场精英。</p>
-                <p>本站为非官方攻略站，与游戏开发商无关联。</p>
+                <div class="footer-logo" data-i18n="footer.logo">三角洲行动攻略站</div>
+                <p data-i18n="footer.about1">提供最新、最专业的三角洲行动游戏攻略、地图解析、武器评测和任务指南。助力玩家提升游戏体验，成为战场精英。</p>
+                <p data-i18n="footer.about2">本站为非官方攻略站，与游戏开发商无关联。</p>
             </div>
             <div class="footer-links">
-                <h3>快速链接</h3>
+                <h3 data-i18n="footer.quick_links">快速链接</h3>
                 <ul>
-                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> 首页</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> 地图攻略</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> 武器数据库</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> 任务指南</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> 游戏更新</a></li>
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav.home">首页</span></a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> <span data-i18n="nav.map_guides">地图攻略</span></a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> <span data-i18n="nav.arsenal">武器数据库</span></a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> <span data-i18n="nav.task_system">任务指南</span></a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> <span data-i18n="nav.changelog">游戏更新</span></a></li>
                 </ul>
             </div>
             <div class="footer-links">
-                <h3>资源中心</h3>
+                <h3 data-i18n="footer.resource_center">资源中心</h3>
                 <ul>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> 下载中心</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> 视频攻略</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> 玩家论坛</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> 常见问题</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> 联系我们</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> <span data-i18n="footer.downloads">下载中心</span></a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> <span data-i18n="footer.video_guides">视频攻略</span></a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> <span data-i18n="footer.forums">玩家论坛</span></a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> <span data-i18n="footer.faq">常见问题</span></a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> <span data-i18n="footer.contact_us">联系我们</span></a></li>
                 </ul>
             </div>
         </div>
-        <div class="copyright">
+        <div class="copyright" data-i18n="footer.copyright">
             &copy; 2023 三角洲行动攻略站 | 本网站仅用于游戏攻略交流，所有游戏内容版权归其开发商所有
         </div>
     </footer>
@@ -436,6 +489,10 @@
         <span class="close-lightbox">&times;</span>
         <img class="lightbox-content" id="lightbox-image">
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/i18next@23.5.1/dist/umd/i18next.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@7.1.0/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@2.2.2/dist/umd/i18nextHttpBackend.min.js"></script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -458,6 +515,77 @@
                 if (event.target == modal) {
                     modal.style.display = "none";
                 }
+            });
+
+            // i18next initialization
+            i18next
+                .use(i18nextHttpBackend)
+                .use(i18nextBrowserLanguageDetector)
+                .init({
+                    fallbackLng: 'zh-CN',
+                    debug: true,
+                    backend: {
+                        loadPath: '/locales/{{lng}}/{{ns}}.json'
+                    },
+                    detection: {
+                        order: ['querystring', 'cookie', 'localStorage', 'sessionStorage', 'navigator', 'htmlTag'],
+                        caches: ['cookie', 'localStorage']
+                    }
+                }, (err, t) => {
+                    if (err) return console.error(err);
+                    updateContent();
+                });
+
+            function updateContent() {
+                document.querySelectorAll('[data-i18n]').forEach(el => {
+                    const key = el.getAttribute('data-i18n');
+                    if (key.startsWith('[') && key.includes(']')) {
+                        const attr = key.match(/\[(.*?)\]/)[1];
+                        const realKey = key.substring(key.indexOf(']') + 1);
+                        el.setAttribute(attr, i18next.t(realKey));
+                    } else {
+                        el.innerHTML = i18next.t(key);
+                    }
+                });
+                updateLangSwitcher();
+            }
+
+            function updateLangSwitcher() {
+                const currentLang = i18next.language;
+                const langBtn = document.getElementById('current-lang');
+                if (currentLang.includes('zh')) {
+                    langBtn.textContent = '简体中文';
+                } else {
+                    langBtn.textContent = 'English';
+                }
+            }
+
+            // Language switcher logic
+            const langSwitcherBtn = document.getElementById('lang-switcher-btn');
+            const langDropdown = document.getElementById('lang-dropdown');
+            langSwitcherBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                langDropdown.style.display = langDropdown.style.display === 'block' ? 'none' : 'block';
+            });
+
+            document.addEventListener('click', () => {
+                langDropdown.style.display = 'none';
+            });
+
+            langDropdown.addEventListener('click', (e) => {
+                e.stopPropagation();
+            });
+
+            document.querySelectorAll('#lang-dropdown a').forEach(el => {
+                el.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const lang = el.getAttribute('data-lang');
+                    i18next.changeLanguage(lang, (err, t) => {
+                        if (err) return console.error(err);
+                        updateContent();
+                        langDropdown.style.display = 'none';
+                    });
+                });
             });
         });
     </script>
