@@ -1,6 +1,6 @@
 {
   "site_title": "三角洲行动地图攻略 (Delta Force Map) - 专业游戏攻略站 | DeltaForceMap.com",
-  "site_description": "三角洲行动 (Delta Force) 游戏最全地图攻略、每日地图密码、任务指南和武器百科。访问 deltaforcemap.com 获取最新、最专业的三角洲行动游戏攻略，成为战场精英。",
+  "site_description": "为三角洲行动提供最完整、最新的交互式地图。探索战利品位置、撤离点，并获取每日密码。最好用的地图和战略指南。",
   "nav": {
     "home": "首页",
     "map_guides": "地图工具",
@@ -206,7 +206,7 @@
   },
   "home": {
     "loot_links_title": "地图战利品",
-    "zero_dam_loot": "零号大Бà地图战利品",
+    "zero_dam_loot": "零号大坝地图战利品",
     "layali_grove_loot": "长弓溪谷地图战利品",
     "brakkesh_loot": "巴克什地图战利品",
     "space_city_loot": "航天基地地图战利品",
