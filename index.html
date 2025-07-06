@@ -795,32 +795,32 @@
                         <a href="ZeroDam.html" class="password-card-link">
                         <div class="password-card">
                                 <div class="map-name">零号大坝</div>
-                            <div class="password-value">4490</div>
+                            <div class="password-value">4984</div>
                         </div>
                         </a>
                         <a href="LayaliGrove.html" class="password-card-link">
                         <div class="password-card">
                             <div class="map-name">长弓溪谷</div>
-                            <div class="password-value">4062</div>
+                            <div class="password-value">2179</div>
                         </div>
                         </a>
                         <a href="Brakkesh.html" class="password-card-link">
                         <div class="password-card">
                             <div class="map-name">巴克什</div>
-                            <div class="password-value">6341</div>
+                            <div class="password-value">8028</div>
                         </div>
                         </a>
                         <a href="SpaceCity.html" class="password-card-link">
                         <div class="password-card">
                             <div class="map-name">航天基地</div>
-                            <div class="password-value">8878</div>
+                            <div class="password-value">2176</div>
                         </div>
                         </a>
                     </a>
                     <a href="#" class="password-card-link">
                     <div class="password-card">
-                        <div class="map-name">潮汐监狱</div>
-                        <div class="password-value">6958</div>
+                        <div class="map-name" data-i18n="maps.tidal_prison">潮汐监狱</div>
+                        <div class="password-value">0000</div>
                     </div>
                     </a>
                 </a>
@@ -843,7 +843,7 @@
                         <a href="LayaliGroveMapLoot.html" class="loot-link-item" data-i18n="home.layali_grove_loot">长弓溪谷地图战利品</a>
                         <a href="#" class="loot-link-item" data-i18n="home.brakkesh_loot">巴克什地图战利品</a>
                         <a href="#" class="loot-link-item" data-i18n="home.space_city_loot">航天基地地图战利品</a>
-                        <a href="#" class="loot-link-item" data-i18n="home.valkyrie_loot">瓦尔基里地图战利品</a>
+                        <a href="TidalPrisonMapLoot.html" class="loot-link-item" data-i18n="home.tidal_prison_loot">潮汐监狱地图战利品</a>
                         <a href="#" class="loot-link-item" data-i18n="home.ouroboros_loot">衔尾蛇行动地图战利品</a>
                     </div>
                 </section>
@@ -1149,7 +1149,7 @@
                   { "map": "长弓溪谷", "code": "2179" },
                   { "map": "巴克什", "code": "8028" },
                   { "map": "航天基地", "code": "2176" },
-                  { "map": "瓦尔基里", "code": "0000" },
+                  { "map": "潮汐监狱", "code": "0000" },
                   { "map": "衔尾蛇行动", "code": "0000" }
                 ]
               }
@@ -1181,7 +1181,7 @@
                         '长弓溪谷': 'maps.layali_grove', 'LayaliGrove': 'maps.layali_grove',
                         '巴克什': 'maps.brakkesh', 'Brakkesh': 'maps.brakkesh',
                         '航天基地': 'maps.space_city', 'SpaceCity': 'maps.space_city',
-                        '瓦尔基里': 'maps.valkyrie', 'Valkyrie': 'maps.valkyrie',
+                        '潮汐监狱': 'maps.tidal_prison', 'Tidal Prison': 'maps.tidal_prison',
                         '衔尾蛇行动': 'maps.operation_ouroboros', 'Operation Ouroboros': 'maps.operation_ouroboros'
                     };
                     const mapKey = mapKeyMap[p.map] || p.map;
@@ -1198,6 +1198,8 @@
                     if (p.map === '长弓溪谷' || p.map === 'LayaliGrove') linkUrl = 'LayaliGrove.html';
                     if (p.map === '巴克什' || p.map === 'Brakkesh') linkUrl = 'Brakkesh.html';
                     if (p.map === '航天基地' || p.map === 'SpaceCity') linkUrl = 'SpaceCity.html';
+                    if (p.map === '潮汐监狱' || p.map === 'Tidal Prison') linkUrl = '#'; // No direct link for tidal prison
+                    if (p.map === '衔尾蛇行动' || p.map === 'Operation Ouroboros') linkUrl = '#'; // No direct link for ouroboros
 
                     const link = document.createElement('a');
                     link.href = linkUrl || '#';

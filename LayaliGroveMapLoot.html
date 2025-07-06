@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
 
     <!-- SEO: Primary Meta Tags -->
-    <title>长工溪谷地图物资 - 三角洲行动攻略站</title>
-    <meta name="description" content="快速了解三角洲行动地图长工溪谷的各类物资刷新位置，包括房卡、大红、服务器等。">
-    <meta name="keywords" content="三角洲行动, 长工溪谷, 物资刷新, 房卡, 大红, 刀片服务器, 机械表, 军用炮弹, 万足金条, 非洲之心">
-    <link rel="canonical" href="https://www.deltaforcemap.com/ZeroDamMapLoot.html">
+    <title>长弓溪谷地图物资 - 三角洲行动攻略站</title>
+    <meta name="description" content="快速了解三角洲行动地图长弓溪谷的各类物资刷新位置，包括房卡、大红、服务器等。">
+    <meta name="keywords" content="三角洲行动, 长弓溪谷, 物资刷新, 房卡, 大红, 刀片服务器, 机械表, 军用炮弹, 军用雷达, 香槟, 无人机, 飞行记录仪, 半身像">
+    <link rel="canonical" href="https://www.deltaforcemap.com/LayaliGroveMapLoot.html">
 
     <!-- SEO: Open Graph / Facebook / Discord -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.deltaforcemap.com/ZeroDamMapLoot.html">
-    <meta property="og:title" content="长工溪谷物资 - 三角洲行动攻略站">
-    <meta property="og:description" content="快速了解三角洲行动地图长工溪谷的各类物资刷新位置。">
+    <meta property="og:url" content="https://www.deltaforcemap.com/LayaliGroveMapLoot.html">
+    <meta property="og:title" content="长弓溪谷物资 - 三角洲行动攻略站">
+    <meta property="og:description" content="快速了解三角洲行动地图长弓溪谷的各类物资刷新位置。">
     <meta property="og:site_name" content="DeltaForceMap.com">
     <meta property="og:image" content="https://www.deltaforcemap.com/全面战场.jpg"> 
     <meta property="og:image:alt" content="三角洲行动游戏场景">
 
     <!-- SEO: Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://www.deltaforcemap.com/ZeroDamMapLoot.html">
-    <meta name="twitter:title" content="长工溪谷物资 - 三角洲行动攻略站">
-    <meta name="twitter:description" content="快速了解三角洲行动地图长工溪谷的各类物资刷新位置。">
+    <meta name="twitter:url" content="https://www.deltaforcemap.com/LayaliGroveMapLoot.html">
+    <meta name="twitter:title" content="长弓溪谷物资 - 三角洲行动攻略站">
+    <meta name="twitter:description" content="快速了解三角洲行动地图长弓溪谷的各类物资刷新位置。">
     <meta name="twitter:image" content="https://www.deltaforcemap.com/全面战场.jpg">
     <meta name="twitter:image:alt" content="三角洲行动游戏场景">
 
@@ -145,6 +145,61 @@
         
         nav a:hover {
             color: var(--accent-light);
+        }
+        
+        .language-switcher {
+            position: relative;
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        .language-switcher button {
+            background-color: var(--accent);
+            color: white;
+            padding: 8px 12px;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .language-switcher button:hover {
+            background-color: var(--accent-light);
+        }
+
+        .language-switcher .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            max-height: 300px;
+            overflow-y: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 5px;
+            overflow: hidden;
+            right: 0;
+        }
+
+        .language-switcher .dropdown-content a {
+            color: black;
+            padding: 10px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 0.95rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .language-switcher .dropdown-content a:last-child {
+            border-bottom: none;
+        }
+
+        .language-switcher .dropdown-content a:hover {
+            background-color: #f1f1f1;
+            color: var(--accent);
         }
         
         /* Page Title */
@@ -282,6 +337,69 @@
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             margin-top: 30px;
         }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+            
+            .language-switcher {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+            
+            .page-title h1 {
+                font-size: 2rem;
+            }
+            
+            .page-title p {
+                font-size: 1rem;
+            }
+            
+            .loot-grid {
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+                gap: 20px;
+            }
+            
+            .loot-card {
+                padding: 20px;
+            }
+            
+            .loot-title {
+                font-size: 1.2rem;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .loot-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .page-title h1 {
+                font-size: 1.8rem;
+            }
+            
+            .loot-card {
+                padding: 15px;
+            }
+            
+            .loot-title {
+                font-size: 1.1rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -301,14 +419,27 @@
                     <li><a href="#">玩家社区</a></li>
                 </ul>
             </nav>
+            <div class="language-switcher">
+                <button id="lang-switcher-btn"><i class="fas fa-globe"></i> <span id="current-lang">Language</span></button>
+                <div class="dropdown-content" id="lang-dropdown">
+                    <a href="#" data-lang="zh-CN">简体中文</a>
+                    <a href="#" data-lang="en">English</a>
+                    <a href="#" data-lang="fr">Français</a>
+                    <a href="#" data-lang="de">Deutsch</a>
+                    <a href="#" data-lang="hi">हिन्दी</a>
+                    <a href="#" data-lang="es">Español</a>
+                    <a href="#" data-lang="th">ไทย</a>
+                    <a href="#" data-lang="pt-BR">Português (BR)</a>
+                </div>
+            </div>
         </div>
     </header>
 
     <!-- Main Content -->
     <div class="container">
         <div class="page-title">
-            <h1>长工溪谷地图物资</h1>
-            <p>快速了解三角洲行动地图长工溪谷的物资出现在哪里</p>
+            <h1>长弓溪谷地图物资</h1>
+            <p>快速了解三角洲行动地图长弓溪谷的物资出现在哪里</p>
         </div>
 
         <div class="loot-grid">
@@ -317,45 +448,81 @@
                     <div class="loot-icon">
                         <img src="src/fangka.png" alt="房卡" style="height: 100%; object-fit: contain;">
                     </div>
-                    <h3 class="loot-title">长工溪谷地图房卡的位置</h3>
+                    <h3 class="loot-title">长弓溪谷地图房卡的位置</h3>
                 </div>
             </a>
-            <div class="loot-card">
-                <div class="loot-icon">
-                <img src="src/dahonggui.png" alt="大战利品" style="height: 100%; object-fit: contain;">
-            </div>
-                <h3 class="loot-title">长工溪谷地图红色大战利品的位置</h3>
-            </div>
-            <div class="loot-card">
-                <div class="loot-icon">
-                    <img src="src/fuwuqi.png" alt="刀片服务器" style="height: 100%; object-fit: contain;">
+            <a href="#" class="loot-card-link">
+                <div class="loot-card">
+                    <div class="loot-icon">
+                        <img src="src/dahonggui.png" alt="大战利品" style="height: 100%; object-fit: contain;">
+                    </div>
+                    <h3 class="loot-title">长弓溪谷地图红色大战利品的位置</h3>
                 </div>
-                <h3 class="loot-title">长工溪谷地图刀片服务器的位置</h3>
-            </div>
-            <div class="loot-card">
-                <div class="loot-icon">
-                    <img src="src/jixiebiao.png" alt="机械表" style="height: 100%; object-fit: contain;">
+            </a>
+            <a href="#" class="loot-card-link">
+                <div class="loot-card">
+                    <div class="loot-icon">
+                        <img src="src/xiangbing.png" alt="香槟" style="height: 100%; object-fit: contain;">
+                    </div>
+                    <h3 class="loot-title">长弓溪谷地图香槟的位置</h3>
                 </div>
-                <h3 class="loot-title">长工溪谷地图名贵机械表的位置</h3>
-            </div>
-            <div class="loot-card">
-                <div class="loot-icon">
-                    <img src="src/junyongpaodan.png" alt="军用炮弹" style="height: 100%; object-fit: contain;">
+            </a>
+            <a href="#" class="loot-card-link">
+                <div class="loot-card">
+                    <div class="loot-icon">
+                        <img src="src/wurenji.png" alt="无人机" style="height: 100%; object-fit: contain;">
+                    </div>
+                    <h3 class="loot-title">长弓溪谷地图无人机的位置</h3>
                 </div>
-                 <h3 class="loot-title">长工溪谷地图军用炮弹的位置</h3>
-            </div>
-            <div class="loot-card">
-                <div class="loot-icon">
-                    <img src="src/jintiao.png" alt="万足金条" style="height: 100%; object-fit: contain;">
+            </a>
+            <a href="#" class="loot-card-link">
+                <div class="loot-card">
+                    <div class="loot-icon">
+                        <img src="src/feixingyi.png" alt="飞行记录仪" style="height: 100%; object-fit: contain;">
+                    </div>
+                    <h3 class="loot-title">长弓溪谷地图飞行记录仪的位置</h3>
                 </div>
-                <h3 class="loot-title">长工溪谷地图万足金条的位置</h3>
-            </div>
-            <div class="loot-card">
-                <div class="loot-icon">
-                    <img src="src/feizhouzhixin.png" alt="非洲之心" style="height: 100%; object-fit: contain;">
+            </a>
+            <a href="#" class="loot-card-link">
+                <div class="loot-card">
+                    <div class="loot-icon">
+                        <img src="src/banshenxiang.png" alt="半身像" style="height: 100%; object-fit: contain;">
+                    </div>
+                    <h3 class="loot-title">长弓溪谷地图半身像的位置</h3>
                 </div>
-                <h3 class="loot-title">长工溪谷地图非洲之心的位置</h3>
-            </div>
+            </a>
+            <a href="#" class="loot-card-link">
+                <div class="loot-card">
+                    <div class="loot-icon">
+                        <img src="src/fuwuqi.png" alt="刀片服务器" style="height: 100%; object-fit: contain;">
+                    </div>
+                    <h3 class="loot-title">长弓溪谷地图刀片服务器的位置</h3>
+                </div>
+            </a>
+            <a href="#" class="loot-card-link">
+                <div class="loot-card">
+                    <div class="loot-icon">
+                        <img src="src/jixiebiao.png" alt="机械表" style="height: 100%; object-fit: contain;">
+                    </div>
+                    <h3 class="loot-title">长弓溪谷地图名贵机械表的位置</h3>
+                </div>
+            </a>
+            <a href="#" class="loot-card-link">
+                <div class="loot-card">
+                    <div class="loot-icon">
+                        <img src="src/junyongpaodan.png" alt="军用炮弹" style="height: 100%; object-fit: contain;">
+                    </div>
+                    <h3 class="loot-title">长弓溪谷地图军用炮弹的位置</h3>
+                </div>
+            </a>
+            <a href="#" class="loot-card-link">
+                <div class="loot-card">
+                    <div class="loot-icon">
+                        <img src="src/junyongleida.png" alt="军用雷达" style="height: 100%; object-fit: contain;">
+                    </div>
+                    <h3 class="loot-title">长弓溪谷地图军用雷达的位置</h3>
+                </div>
+            </a>
         </div>
     </div>
     
@@ -388,5 +555,91 @@
             &copy; 2023 三角洲行动攻略站 | 本网站仅用于游戏攻略交流，所有游戏内容版权归其开发商所有
         </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/23.11.2/i18next.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-browser-languagedetector/7.2.0/i18nextBrowserLanguageDetector.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-http-backend/2.5.0/i18nextHttpBackend.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // i18next initialization
+            i18next
+                .use(window.i18nextHttpBackend)
+                .use(window.i18nextBrowserLanguageDetector)
+                .init({
+                    fallbackLng: 'zh-CN',
+                    debug: true,
+                    backend: {
+                        loadPath: '/locales/{{lng}}/{{ns}}.json'
+                    },
+                    detection: {
+                        order: ['querystring', 'cookie', 'localStorage', 'sessionStorage', 'navigator', 'htmlTag'],
+                        caches: ['cookie', 'localStorage']
+                    }
+                }, (err, t) => {
+                    if (err) return console.error(err);
+                    updateContent();
+                });
+
+            function updateContent() {
+                document.querySelectorAll('[data-i18n]').forEach(el => {
+                    const key = el.getAttribute('data-i18n');
+                    if (key.startsWith('[') && key.includes(']')) {
+                        const attr = key.match(/\[(.*?)\]/)[1];
+                        const realKey = key.substring(key.indexOf(']') + 1);
+                        el.setAttribute(attr, i18next.t(realKey));
+                    } else {
+                        el.innerHTML = i18next.t(key);
+                    }
+                });
+                updateLangSwitcher();
+            }
+            
+            function updateLangSwitcher() {
+                const currentLang = i18next.language;
+                const langBtn = document.getElementById('current-lang');
+                const langMap = {
+                    'zh-CN': '简体中文',
+                    'en': 'English',
+                    'fr': 'Français',
+                    'de': 'Deutsch',
+                    'hi': 'हिन्दी',
+                    'es': 'Español',
+                    'th': 'ไทย',
+                    'pt-BR': 'Português (BR)'
+                };
+                if (langBtn) {
+                    langBtn.textContent = langMap[currentLang] || currentLang;
+                }
+            }
+
+            // Language switcher logic
+            const langSwitcherBtn = document.getElementById('lang-switcher-btn');
+            const langDropdown = document.getElementById('lang-dropdown');
+            langSwitcherBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                langDropdown.style.display = langDropdown.style.display === 'block' ? 'none' : 'block';
+            });
+
+            document.addEventListener('click', () => {
+                langDropdown.style.display = 'none';
+            });
+
+            langDropdown.addEventListener('click', (e) => {
+                e.stopPropagation();
+            });
+
+            document.querySelectorAll('#lang-dropdown a').forEach(el => {
+                el.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const lang = el.getAttribute('data-lang');
+                    i18next.changeLanguage(lang, (err, t) => {
+                        if (err) return console.error(err);
+                        updateContent();
+                        langDropdown.style.display = 'none';
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html> 
