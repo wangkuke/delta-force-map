@@ -48,7 +48,9 @@
             border-bottom: 2px solid var(--accent);
             position: sticky;
             top: 0;
-            z-index: 1000;
+            left: 0;
+            width: 100%;
+            z-index: 10;
         }
         
         .header-content {
@@ -136,19 +138,17 @@
             background-color: var(--accent-light);
         }
 
-        .language-switcher .dropdown-content {
+        .language-switcher .dropdown-content, #lang-dropdown {
             display: none;
-            position: absolute;
+            position: fixed;
             background-color: #f9f9f9;
             min-width: 160px;
             max-height: 300px;
             overflow-y: auto;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1003;
+            z-index: 9999;
             border-radius: 5px;
-            right: 0;
-            top: 100%;
-            margin-top: 5px;
+            margin-top: 0;
         }
 
         .language-switcher .dropdown-content a {
@@ -377,6 +377,33 @@
                 margin-bottom: 5px;
             }
         }
+        #lang-dropdown {
+            display: none;
+            position: fixed;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            max-height: 300px;
+            overflow-y: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 9999;
+            border-radius: 5px;
+            margin-top: 0;
+        }
+        #lang-dropdown a {
+            color: black;
+            padding: 10px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 0.95rem;
+            border-bottom: 1px solid #eee;
+        }
+        #lang-dropdown a:last-child {
+            border-bottom: none;
+        }
+        #lang-dropdown a:hover {
+            background-color: #f1f1f1;
+            color: var(--accent);
+        }
     </style>
 </head>
 <body>
@@ -398,16 +425,6 @@
             </nav>
             <div class="language-switcher">
                 <button id="lang-switcher-btn"><i class="fas fa-globe"></i> <span id="current-lang">Language</span></button>
-                <div class="dropdown-content" id="lang-dropdown">
-                    <a href="#" data-lang="en">English</a>
-                    <a href="#" data-lang="zh-CN">简体中文</a>
-                    <a href="#" data-lang="fr">Français</a>
-                    <a href="#" data-lang="de">Deutsch</a>
-                    <a href="#" data-lang="es">Español</a>
-                    <a href="#" data-lang="pt-BR">Português (BR)</a>
-                    <a href="#" data-lang="th">ไทย</a>
-                    <a href="#" data-lang="hi">हिन्दी</a>
-                </div>
             </div>
         </div>
     </header>
@@ -675,7 +692,13 @@
             const langDropdown = document.getElementById('lang-dropdown');
             langSwitcherBtn.addEventListener('click', (e) => {
                 e.stopPropagation();
+                // 计算按钮位置
+                const rect = langSwitcherBtn.getBoundingClientRect();
                 langDropdown.style.display = langDropdown.style.display === 'block' ? 'none' : 'block';
+                langDropdown.style.position = 'fixed';
+                langDropdown.style.left = rect.left + 'px';
+                langDropdown.style.top = (rect.bottom + 4) + 'px'; // 4px间距
+                langDropdown.style.zIndex = 9999;
             });
 
             document.addEventListener('click', () => {
@@ -767,5 +790,16 @@
             });
         });
     </script>
+    <!-- 语言下拉菜单移到body末尾 -->
+    <div class="dropdown-content" id="lang-dropdown">
+        <a href="#" data-lang="en">English</a>
+        <a href="#" data-lang="zh-CN">简体中文</a>
+        <a href="#" data-lang="fr">Français</a>
+        <a href="#" data-lang="de">Deutsch</a>
+        <a href="#" data-lang="es">Español</a>
+        <a href="#" data-lang="pt-BR">Português (BR)</a>
+        <a href="#" data-lang="th">ไทย</a>
+        <a href="#" data-lang="hi">हिन्दी</a>
+    </div>
 </body>
 </html> 
