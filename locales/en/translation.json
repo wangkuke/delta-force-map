@@ -330,6 +330,9 @@
     "card_ocean_tears_alt": "Ocean Tears"
   },
   "zeroDamKeyRoom": {
+    "seo_title": "Zero Dam Map Keycard Locations - Delta Force Strategy Guide",
+    "seo_description": "Find all keycard spawn locations in Delta Force Zero Dam map including room keys, valuable items, servers, and rare collectibles. Complete loot guide for American players.",
+    "seo_keywords": "Delta Force, Zero Dam, keycard locations, room key, valuable items, blade server, luxury watch, military shell, gold bar, Africa Heart, Ocean Tears, gaming guide, strategy",
     "page_title": "Zero Dam Keycard Locations Guide",
     "page_description": "Complete keycard spawn guide for Delta Force Zero Dam map. Find all valuable items, room keys, and rare collectibles.",
     "map_name": "Zero Dam Map",
@@ -348,5 +351,16 @@
     "card_substation_dorm": "Substation Dormitory Location",
     "card_room_card_alt": "Keycard Location Image",
     "popup_img_alt": "Keycard Location Large Image"
+  },
+  "lang": {
+    "current": "Language",
+    "en": "English",
+    "zh-CN": "简体中文",
+    "fr": "Français",
+    "de": "Deutsch",
+    "es": "Español",
+    "pt-BR": "Português (BR)",
+    "th": "ไทย",
+    "hi": "हिन्दी"
   }
 } 
