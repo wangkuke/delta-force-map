@@ -125,7 +125,7 @@
     "forums": "玩家论坛",
     "faq": "常见问题",
     "contact_us": "联系我们",
-    "copyright": "&copy; 2023 三角洲行动攻略站 | 本网站仅用于游戏攻略交流，所有游戏内容版权归其开发商所有"
+    "copyright": "© 2023 三角洲行动攻略站 | 本网站仅用于游戏攻略交流，所有游戏内容版权归其开发商所有"
   },
   "crafting": {
     "seo_title": "特情处制造 | 三角洲行动攻略站 | 最高收益推荐",
@@ -328,5 +328,45 @@
     "card_africa_heart_alt": "非洲之心",
     "card_ocean_tears_title": "巴克什地图海洋之泪的位置",
     "card_ocean_tears_alt": "海洋之泪"
+  },
+  "zeroDamKeyRoom": {
+    "seo_title": "零号大坝地图房卡位置 - 三角洲行动攻略站",
+    "seo_description": "查看三角洲行动中零号大坝地图所有房卡的刷新位置。详细攻略，包括需要前置钥匙的地点。",
+    "seo_keywords": "三角洲行动, 零号大坝, 房卡位置, 房卡, 大红, 刀片服务器, 机械表, 军用炮弹, 万足金条, 非洲之心, 海洋之泪, 游戏攻略, 策略",
+    "og_title": "零号大坝房卡指南 - 三角洲行动攻略站",
+    "og_description": "零号大坝地图房卡刷新完整指南。查找房卡、贵重物品和稀有收藏品。",
+    "og_image_alt": "三角洲行动零号大坝游戏场景",
+    "twitter_title": "零号大坝房卡指南 - 三角洲行动攻略站",
+    "twitter_description": "零号大坝地图房卡刷新完整指南。查找房卡、贵重物品和稀有收藏品。",
+    "twitter_image_alt": "三角洲行动零号大坝游戏场景",
+    "page_title": "零号大坝地图房卡位置指南",
+    "page_description": "零号大坝地图房卡刷新完整指南。查找所有贵重物品、房卡和稀有收藏品。",
+    "card_room_card_title": "零号大坝地图房卡位置",
+    "card_room_card_alt": "房卡",
+    "card_big_loot_title": "零号大坝地图红色大战利品位置",
+    "card_big_loot_alt": "大战利品",
+    "card_server_title": "零号大坝地图刀片服务器位置",
+    "card_server_alt": "刀片服务器",
+    "card_watch_title": "零号大坝地图名贵机械表位置",
+    "card_watch_alt": "机械表",
+    "card_shell_title": "零号大坝地图军用炮弹位置",
+    "card_shell_alt": "军用炮弹",
+    "card_gold_bar_title": "零号大坝地图万足金条位置",
+    "card_gold_bar_alt": "万足金条",
+    "card_africa_heart_title": "零号大坝地图非洲之心位置",
+    "card_africa_heart_alt": "非洲之心",
+    "card_ocean_tears_title": "零号大坝地图海洋之泪位置",
+    "card_ocean_tears_alt": "海洋之泪"
+  },
+  "lang": {
+    "current": "语言",
+    "en": "English",
+    "zh-CN": "简体中文",
+    "fr": "Français",
+    "de": "Deutsch",
+    "es": "Español",
+    "pt-BR": "Português (BR)",
+    "th": "ไทย",
+    "hi": "हिन्दी"
   }
 } 

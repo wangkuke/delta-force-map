@@ -170,5 +170,25 @@
     "card_africa_heart_alt": "Cœur d'Afrique",
     "card_ocean_tears_title": "Emplacements des Larmes de l'Océan de Brakkesh",
     "card_ocean_tears_alt": "Larmes de l'Océan"
+  },
+  "zeroDamKeyRoom": {
+    "page_title": "Zero Dam Keycard Locations Guide",
+    "page_description": "Complete keycard spawn guide for Delta Force Zero Dam map. Find all valuable items, room keys, and rare collectibles.",
+    "map_name": "Zero Dam Map",
+    "card_substation_tech_room": "Substation Tech Room Location",
+    "card_east_manager_room": "East Manager Room Location",
+    "card_device_room": "Device Room Location",
+    "card_west_monitor_room": "West Monitor Room Location",
+    "card_west_control_room": "West Control Room Location",
+    "card_military_camp_storage": "Military Camp Storage Room Location",
+    "card_ticket_office": "Ticket Office Location",
+    "card_cement_factory_office": "Cement Factory Office Location",
+    "card_cement_factory_dorm": "Cement Factory Dormitory Location",
+    "card_center_vip_room": "Center VIP Room Location",
+    "card_underground_tunnel": "Underground Tunnel Location",
+    "card_west_medical_room": "West Medical Room Location",
+    "card_substation_dorm": "Substation Dormitory Location",
+    "card_room_card_alt": "Keycard Location Image",
+    "popup_img_alt": "Keycard Location Large Image"
   }
 } 
