@@ -194,6 +194,9 @@
     "card_room_card_alt": "ภาพตำแหน่งคีย์การ์ด",
     "popup_img_alt": "ภาพใหญ่ตำแหน่งคีย์การ์ด"
   },
+  "home": {
+    "zero_dam_keycard_guide": "คู่มือออนไลน์ตำแหน่งคีย์การ์ด Zero Dam!"
+  },
   "lang": {
     "current": "ภาษา",
     "en": "English",

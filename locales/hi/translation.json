@@ -237,6 +237,9 @@
     "card_room_card_alt": "कीकार्ड स्थान छवि",
     "popup_img_alt": "कीकार्ड स्थान बड़ी छवि"
   },
+  "home": {
+    "zero_dam_keycard_guide": "Zero Dam कीकार्ड स्थान ऑनलाइन गाइड!"
+  },
   "lang": {
     "current": "भाषा",
     "en": "English",
