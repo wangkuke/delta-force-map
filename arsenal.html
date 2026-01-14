@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- SEO: Primary Meta Tags -->
+    <title data-i18n="arsenal.title">Delta Force Arsenal | Gun Builds & Loadouts</title>
+    <meta name="description" content="Complete Delta Force arsenal with the best gun builds, loadouts, and weapon customization codes. Optimize your weapons for maximum performance in Delta Force." data-i18n="arsenal.description">
+    <meta name="keywords" content="delta force, delta force arsenal, delta force gun builds, delta force loadouts, delta force weapon codes, delta force best guns, delta force weapon customization">
+    <link rel="canonical" href="https://deltaforcemap.com/arsenal.html">
+    
+    <!-- SEO: Open Graph / Facebook / Discord -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://deltaforcemap.com/arsenal.html">
+    <meta property="og:title" content="Delta Force Arsenal | Gun Builds & Loadouts">
+    <meta property="og:description" content="Complete Delta Force arsenal with the best gun builds, loadouts, and weapon customization codes.">
+    <meta property="og:image" content="https://deltaforcemap.com/全面战场.jpg">
+    
+    <!-- SEO: Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://deltaforcemap.com/arsenal.html">
+    <meta name="twitter:title" content="Delta Force Arsenal | Gun Builds & Loadouts">
+    <meta name="twitter:description" content="Complete Delta Force arsenal with the best gun builds, loadouts, and weapon customization codes.">
+    <meta name="twitter:image" content="https://deltaforcemap.com/全面战场.jpg">
+    <link rel="icon" href="https://game.gtimg.cn/images/dfm/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a2a4a;
+            --secondary: #2c3e50;
+            --accent: #e74c3c;
+            --accent-light: #ff6b6b;
+            --light: #ecf0f1;
+            --dark: #121a26;
+            --success: #2ecc71;
+            --warning: #f39c12;
+            --info: #3498db;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: url('全面战场.jpg') no-repeat center center;
+            background-size: cover;
+            color: var(--light);
+            line-height: 1.6;
+            min-height: 100vh;
+            background-attachment: fixed;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: rgba(10, 20, 35, 0.85);
+            backdrop-filter: blur(10px);
+            padding: 15px 0;
+            border-bottom: 2px solid var(--accent);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+        
+        .header-content {
+            display: flex;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .lang-switcher {
+            position: relative;
+            display: inline-block;
+            margin-left: 30px;
+        }
+
+        .lang-switcher-current {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: var(--light);
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .lang-switcher-current:hover {
+            background-color: var(--accent);
+        }
+
+        .lang-switcher-dropdown {
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 100%;
+            background-color: var(--secondary);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1001;
+            border-radius: 5px;
+            margin-top: 5px;
+            padding: 5px 0;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .lang-switcher-dropdown a {
+            color: var(--light);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.2s;
+        }
+
+        .lang-switcher-dropdown a:hover {
+            background-color: var(--accent);
+        }
+
+        .lang-switcher-dropdown a.active {
+            background-color: rgba(231, 76, 60, 0.3);
+            font-weight: bold;
+        }
+
+        .lang-switcher.show .lang-switcher-dropdown {
+            display: block;
+        }
+
+        .lang-switcher.show .lang-switcher-current {
+             background-color: var(--accent);
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo i {
+            color: var(--accent);
+            font-size: 2.5rem;
+        }
+        
+        .logo h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.2rem;
+            background: linear-gradient(to right, var(--accent-light), var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .logo span {
+            color: var(--light);
+            font-weight: 300;
+            font-size: 1.1rem;
+            margin-left: 5px;
+        }
+        
+        header nav {
+            margin-left: auto;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+        
+        nav a {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        nav a:hover {
+            color: var(--accent-light);
+        }
+        
+        nav a.active {
+            background: rgba(231, 76, 60, 0.2);
+            color: var(--accent-light);
+        }
+        
+        nav a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--accent);
+            border-radius: 3px;
+        }
+        
+        /* Arsenal Styles */
+        .arsenal-header {
+            background: rgba(25, 40, 65, 0.7);
+            border-radius: 12px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        .arsenal-header h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5rem;
+            background: linear-gradient(to right, var(--accent-light), var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 10px;
+        }
+        
+        .arsenal-header p {
+            font-size: 1.2rem;
+            color: #bdc3c7;
+        }
+        
+        /* Filter Section */
+        .filter-section {
+            background: rgba(25, 40, 65, 0.7);
+            border-radius: 12px;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            align-items: center;
+        }
+        
+        .filter-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .filter-group label {
+            font-weight: 500;
+            color: var(--light);
+        }
+        
+        .filter-group select {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: var(--light);
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        
+        .filter-group select option {
+            background: var(--secondary);
+            color: var(--light);
+        }
+        
+        /* Gun List */
+        .gun-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+        
+        .gun-card {
+            background: rgba(25, 40, 65, 0.7);
+            border-radius: 12px;
+            padding: 25px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .gun-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+        }
+        
+        .gun-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        
+        .gun-name {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.2rem;
+            color: var(--accent-light);
+            margin-bottom: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .gun-creator {
+            font-size: 0.9rem;
+            color: #bdc3c7;
+        }
+        
+        .gun-price {
+            background: rgba(231, 76, 60, 0.2);
+            color: var(--accent);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        
+        /* Gun Image */
+        .gun-image {
+            width: 100%;
+            height: 250px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .gun-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+            background: rgba(0, 0, 0, 0.1);
+        }
+        
+        .gun-card:hover .gun-image img {
+            transform: scale(1.05);
+        }
+        
+        /* Copy Button */
+        .copy-button {
+            width: 100%;
+            background: linear-gradient(135deg, var(--accent), var(--accent-light));
+            color: var(--light);
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 15px;
+        }
+        
+        .copy-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
+        }
+        
+        .copy-button:active {
+            transform: translateY(0);
+        }
+        
+        .copy-button.copied {
+            background: var(--success);
+        }
+        
+        /* Pagination */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 30px;
+            padding: 20px;
+        }
+        
+        .pagination button {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: var(--light);
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .pagination button:hover {
+            background-color: var(--accent);
+        }
+        
+        .pagination button.active {
+            background-color: var(--accent);
+            border-color: var(--accent);
+        }
+        
+        .pagination button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        /* Footer Styles */
+        footer {
+            background: rgba(10, 20, 35, 0.85);
+            margin-top: 50px;
+            padding: 30px 0;
+            border-top: 2px solid var(--accent);
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .footer-logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.8rem;
+            color: var(--accent-light);
+            margin-bottom: 15px;
+        }
+        
+        .footer-about p {
+            color: #bdc3c7;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+        
+        .footer-links h3 {
+            color: var(--light);
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a {
+            color: #bdc3c7;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent-light);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 30px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .lang-switcher {
+                position: static;
+                transform: none;
+                order: -1;
+                margin-bottom: 10px;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+            
+            .filter-section {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .filter-group {
+                justify-content: space-between;
+            }
+            
+            .gun-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-crosshairs" alt=""></i>
+                <h1><span data-i18n="header.title">Delta Force</span><span data-i18n="header.subtitle">Map Hub</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                    <li><a href="mapTool.html" data-i18n="nav.map_guides">Map Tools</a></li>
+                    <li><a href="arsenal.html" class="active" data-i18n="nav.arsenal">Arsenal</a></li>
+                    <li><a href="#" data-i18n="nav.task_system">Task System</a></li>
+                    <li><a href="#" data-i18n="nav.community">Community</a></li>
+                </ul>
+            </nav>
+            <div class="lang-switcher">
+                <button class="lang-switcher-current">
+                    <span id="current-lang-text">Language</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="lang-switcher-dropdown">
+                    <a href="#" data-lang="zh-CN">中文</a>
+                    <a href="#" data-lang="en">English</a>
+                    <a href="#" data-lang="fr">Français</a>
+                    <a href="#" data-lang="de">Deutsch</a>
+                    <a href="#" data-lang="hi">हिन्दी</a>
+                    <a href="#" data-lang="es">Español</a>
+                    <a href="#" data-lang="th">ไทย</a>
+                    <a href="#" data-lang="pt-BR">Português (BR)</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Arsenal Header -->
+        <section class="arsenal-header">
+            <h1>Delta Force Arsenal</h1>
+            <p>Discover the best gun builds, loadouts, and weapon customization codes for Delta Force</p>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="filter-section">
+            <div class="filter-group">
+                <label for="weapon-type">Weapon Type:</label>
+                <select id="weapon-type">
+                    <option value="all">All Types</option>
+                    <option value="assault">Assault Rifles</option>
+                    <option value="smg">SMGs</option>
+                    <option value="sniper">Sniper Rifles</option>
+                    <option value="shotgun">Shotguns</option>
+                    <option value="pistol">Pistols</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="sort-by">Sort By:</label>
+                <select id="sort-by">
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="price-asc">Price: Low to High</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Gun List -->
+        <section class="gun-list" id="gun-list">
+            <!-- Gun cards will be generated by JavaScript -->
+        </section>
+
+        <!-- Pagination -->
+        <section class="pagination" id="pagination">
+            <!-- Pagination buttons will be generated by JavaScript -->
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <div class="footer-logo">Delta Force Map Hub</div>
+                <p>Complete, up-to-date guides, maps, and weapon builds for Delta Force. Help players enhance their gaming experience and become battlefield elites.</p>
+                <p>This is a fan-made website and is not affiliated with the game developers.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="mapTool.html"><i class="fas fa-chevron-right"></i> Map Tools</a></li>
+                    <li><a href="arsenal.html"><i class="fas fa-chevron-right"></i> Arsenal</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Mission Guides</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Game Updates</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Resource Center</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Downloads</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Video Guides</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Forums</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2023 Delta Force Map Hub | This website is for gaming guide purposes only. All game content is the property of its respective developers.
+        </div>
+    </footer>
+
+    <script>
+        // Gun data from the reference page
+        const guns = [
+            {
+                name: "57W Full Hip Fire MK47",
+                creator: "Yang Qijia",
+                price: 570000,
+                type: "assault",
+                gunCode: "【MK47】Assault Rifle",
+                image: "src/arsenal/6IN8FQO0ERP7EPT8SOPKB.png"
+            },
+            {
+                name: "20W Stable G3",
+                creator: "Yang Qijia",
+                price: 200000,
+                type: "assault",
+                gunCode: "【G3】Battle Rifle",
+                image: "src/arsenal/6IN87MG0ERP7EPT8SOPKB.png"
+            },
+            {
+                name: "26W Close Combat MK47",
+                creator: "Super Blue Wolf",
+                price: 260000,
+                type: "assault",
+                gunCode: "【MK47】Assault Rifle",
+                image: "src/arsenal/6IN8F8C00HQLU2MDVQMAA.png"
+            },
+            {
+                name: "36W Balanced KC17",
+                creator: "Super Blue Wolf",
+                price: 360000,
+                type: "assault",
+                gunCode: "【KC17】Assault Rifle",
+                image: "src/arsenal/6IN8FQK00HQLU2MDVQMAA.png"
+            },
+            {
+                name: "5W High Risk G18",
+                creator: "Cookie Sheriff",
+                price: 50000,
+                type: "pistol",
+                gunCode: "【G18】Pistol",
+                image: "src/arsenal/6IN8K580223NGCLVVEN6F.png"
+            },
+            {
+                name: "11W Close Combat Bizon",
+                creator: "Cookie Sheriff",
+                price: 110000,
+                type: "smg",
+                gunCode: "【Bizon】SMG",
+                image: "src/arsenal/6IN8IUK0223NGCLVVEN6F.png"
+            },
+            {
+                name: "7W Stable AKS74U",
+                creator: "Cookie Sheriff",
+                price: 70000,
+                type: "smg",
+                gunCode: "【AKS74U】Assault Rifle",
+                image: "src/arsenal/6IN8IGG0223NGCLVVEN6F.png"
+            },
+            {
+                name: "11W Stable M16A4",
+                creator: "Cookie Sheriff",
+                price: 110000,
+                type: "assault",
+                gunCode: "【M16A4】Assault Rifle",
+                image: "src/arsenal/6IN8I440223NGCLVVEN6F.png"
+            },
+            {
+                name: "9W Reserve G3",
+                creator: "Cookie Sheriff",
+                price: 90000,
+                type: "assault",
+                gunCode: "【G3】Battle Rifle",
+                image: "src/arsenal/6IN8G200223NGCLVVEN6F.png"
+            },
+            {
+                name: "33W Value KC17",
+                creator: "Cookie Sheriff",
+                price: 330000,
+                type: "assault",
+                gunCode: "【KC17】Assault Rifle",
+                image: "src/arsenal/6IHGMQ00223NGCLVVEN6F.png"
+            }
+        ];
+
+        // Current page and filters
+        let currentPage = 1;
+        const gunsPerPage = 6;
+        let currentFilter = { type: 'all', sort: 'price-desc' };
+
+        // Function to render gun cards
+        function renderGuns(filteredGuns, page) {
+            const gunList = document.getElementById('gun-list');
+            const startIndex = (page - 1) * gunsPerPage;
+            const endIndex = startIndex + gunsPerPage;
+            const pageGuns = filteredGuns.slice(startIndex, endIndex);
+
+            gunList.innerHTML = pageGuns.map(gun => `
+                <div class="gun-card">
+                    <div class="gun-header">
+                        <div>
+                            <div class="gun-name">${gun.name}</div>
+                            <div class="gun-creator">By: ${gun.creator}</div>
+                        </div>
+                        <div class="gun-price">${gun.price.toLocaleString()}</div>
+                    </div>
+                    <div class="gun-image">
+                        <img src="${gun.image}" alt="${gun.name}" loading="lazy">
+                    </div>
+                    <button class="copy-button" onclick="copyGunCode('${gun.gunCode}', this)">Copy ${gun.gunCode.split('】')[0]}】Build Code</button>
+                </div>
+            `).join('');
+        }
+
+        // Function to render pagination
+        function renderPagination(totalGuns, page) {
+            const pagination = document.getElementById('pagination');
+            const totalPages = Math.ceil(totalGuns / gunsPerPage);
+
+            let paginationHTML = '';
+            
+            // Previous button
+            paginationHTML += `<button ${page === 1 ? 'disabled' : ''} onclick="changePage(${page - 1})">Previous</button>`;
+            
+            // Page numbers
+            for (let i = 1; i <= totalPages; i++) {
+                paginationHTML += `<button class="${i === page ? 'active' : ''}" onclick="changePage(${i})"><span>${i}</span></button>`;
+            }
+            
+            // Next button
+            paginationHTML += `<button ${page === totalPages ? 'disabled' : ''} onclick="changePage(${page + 1})">Next</button>`;
+            
+            pagination.innerHTML = paginationHTML;
+        }
+
+        // Function to filter and sort guns
+        function getFilteredGuns() {
+            let filtered = guns;
+            
+            // Filter by weapon type
+            if (currentFilter.type !== 'all') {
+                filtered = filtered.filter(gun => gun.type === currentFilter.type);
+            }
+            
+            // Sort guns
+            switch (currentFilter.sort) {
+                case 'price-desc':
+                    filtered.sort((a, b) => b.price - a.price);
+                    break;
+                case 'price-asc':
+                    filtered.sort((a, b) => a.price - b.price);
+                    break;
+            }
+            
+            return filtered;
+        }
+
+        // Function to update guns display
+        function updateGuns() {
+            const filteredGuns = getFilteredGuns();
+            renderGuns(filteredGuns, currentPage);
+            renderPagination(filteredGuns.length, currentPage);
+        }
+
+        // Function to change page
+        function changePage(page) {
+            currentPage = page;
+            updateGuns();
+        }
+
+        // Event listeners for filters
+        document.getElementById('weapon-type').addEventListener('change', (e) => {
+            currentFilter.type = e.target.value;
+            currentPage = 1;
+            updateGuns();
+        });
+
+        document.getElementById('sort-by').addEventListener('change', (e) => {
+            currentFilter.sort = e.target.value;
+            currentPage = 1;
+            updateGuns();
+        });
+
+        // Function to copy gun code to clipboard
+        function copyGunCode(code, button) {
+            navigator.clipboard.writeText(code).then(() => {
+                // Change button text and style temporarily
+                const originalText = button.textContent;
+                button.textContent = 'Copied!';
+                button.classList.add('copied');
+                
+                // Reset after 2 seconds
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.classList.remove('copied');
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+                alert('Failed to copy. Please copy manually.');
+            });
+        }
+
+        // Initialize page
+        updateGuns();
+
+        // Language switcher functionality
+        document.querySelector('.lang-switcher-current').addEventListener('click', function() {
+            document.querySelector('.lang-switcher').classList.toggle('show');
+        });
+
+        // Close language switcher when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.lang-switcher')) {
+                document.querySelector('.lang-switcher').classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>
